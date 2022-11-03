@@ -8,16 +8,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameSelectController">
+<AnchorPane style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameSelectController">
    <children>
       <VBox alignment="CENTER" prefHeight="250.0" prefWidth="400.0" spacing="16.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="menuLogo" fitHeight="101.0" fitWidth="336.0" nodeOrientation="INHERIT" preserveRatio="true">
                <image>
-                  <Image url="@menuLogo1.png" />
+                  <Image url="@felogo2red.png" />
                </image>
             </ImageView>
-            <Label text="Select Game" textFill="WHITE" />
+            <Label text="Select Game" textFill="#ae0000" />
             <ChoiceBox fx:id="gameBox" prefWidth="200.0" />
             <Button fx:id="goButton" mnemonicParsing="false" onAction="#makeSelection" prefHeight="25.0" prefWidth="72.0" text="Go" textAlignment="CENTER" />
          </children>

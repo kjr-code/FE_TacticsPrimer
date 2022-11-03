@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox fx:id="addUnitButton" alignment="CENTER" layoutX="250.0" layoutY="100.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" spacing="16.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox alignment="CENTER" layoutX="10.0" layoutY="141.0" prefHeight="65.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #dea445;">
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="141.0" prefHeight="65.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #e5e5e5;">
                <children>
                   <ChoiceBox prefWidth="150.0" />
                   <ChoiceBox prefWidth="150.0" />
@@ -38,7 +38,7 @@
                <padding>
                   <Insets left="20.0" right="20.0" />
                </padding></HBox>
-            <HBox alignment="CENTER" layoutX="10.0" layoutY="300.0" prefHeight="65.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #dea445;">
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="300.0" prefHeight="65.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #e5e5e5;">
                <children>
                   <ChoiceBox prefWidth="150.0" />
                   <ChoiceBox prefWidth="150.0" />
@@ -62,7 +62,7 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </HBox>
-            <HBox alignment="CENTER" layoutX="10.0" layoutY="381.0" prefHeight="65.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #dea445;">
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="381.0" prefHeight="65.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #e5e5e5;">
                <children>
                   <ChoiceBox prefWidth="150.0" />
                   <ChoiceBox prefWidth="150.0" />
@@ -86,7 +86,7 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </HBox>
-            <Label fx:id="noneSelectedLabel" minHeight="-Infinity" minWidth="-Infinity" text="No units selected yet!" textFill="WHITE" />
+            <Label fx:id="noneSelectedLabel" minHeight="-Infinity" minWidth="-Infinity" text="No units selected yet!" textFill="#909090" />
             <Button mnemonicParsing="false" text="Add Unit" textAlignment="CENTER" />
          </children>
       </VBox>

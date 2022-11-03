@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class _dataGrabber {
+public class DataGrabber {
 
     public static ArrayList<Character> charDB = new ArrayList<Character>();
     
@@ -31,7 +31,7 @@ public class _dataGrabber {
                 Character thisChar = new Character(unitData);
                 charDB.add(thisChar);
             }
-
+            fileScanner.close();
         } catch(FileNotFoundException e) {
             System.out.println("_dattaGrabber can't find the file it's looking for!");
             e.printStackTrace();
