@@ -1,0 +1,105 @@
+Dragon Ward&Allies adjacent to the user have a Luck x 0.5% chance of receiving half damage from enemy attacks&Hoshido Noble
+Hoshidan Unity&Adds 10% to skill activation rates&Hoshido Noble
+Duelist's Blow&When user triggers the battle, Avoid + 30&Samurai
+Vantage&At the start of battle, when the user has under half HP, they attack first&Samurai
+Astra&Skill x 0.5% chance of triggering 5 consecutive hits with half damage&Swordmaster
+Swordfaire&When user is equipped with a Sword, damage +5 during battle&Swordmaster
+Seal Strength&After battle, enemy's Strength -6&Master of Arms
+Life and Death&During battles, damage +10, damage received +10&Master of Arms
+Seal Resistance&After battle, enemy's Resistance -6&Oni Savage
+Shove&Select the "Shove" command to push an adjacent ally 1 tile&Oni Savage
+Death Blow&When user triggers the battle, Critical rate +20&Oni Chieftan
+Counter&When an adjacent enemy triggers the battle and inflicts damage, the enemy receives the same damage&Oni Chieftan
+Salvage Blow&When user triggers the battle, Luck% chance of receiving a Katana, Naginata, Club, Yumi, or Shuriken if the user defeats the enemy&Blacksmith
+Lancebreaker&Hit rate and Avoid +50 when the enemy is equipped with a Lance&Blacksmith
+Seal Defence&After battle, enemy's Defence-6&Spear Fighter
+Swap&Select the "Swap" command to swap places with an adjacent ally on the map&Spear Fighter
+Seal Speed&After battle, enemy's Speed -6&Spear Master
+Lancefaire&When user is equipped with a Lance, damage +5 during battle&Spear Master
+Rend Heaven&Skill x 1.5 chance of adding half the enemy's Strength(if user has a physical weapon) or Magic (if user has a magical weapon) as damage&Basara
+Quixotic&User and enemy's Hit rate +30 and skill activation rate +15% during battle&Basara
+Magic+2&Magic+2&Diviner
+Future Sight&When user triggers the battle, Luck% chance of gaining double experience when user defeats the enemy&Diviner
+Rally Magic&Magic +4 to all allies within a 2 tile radius for one Turn when the "Rally" command is used&Onmyoji
+Tomefaire&When user is equipped with a Tome, damage +5 during battle&Onmyoji
+Miracle&Luck% chance of leaving the user with 1 HP when they have 2 or more HP&Monk
+Rally Luck&Luck+8 to all allies within a 2 tile radius for one Turn when the "Rally" command is used&Monk
+Renewal&Recover 30% HP at the start of the user's Turn&Great Master
+Countermagic&When the enemy triggers teh battle and inflicts magical damage, the enemy receives the same damage&Great Master
+Darting Blow&When user triggers the battle, follow up attack speed +5&Sky Knight
+Camaraderie&Recover 10% HP at the start of the user's Turn if there are allies within a 2 tile radius&Sky Knight
+Rally Speed&Speed +4 to all allies within a 2 tile radius for one Turn when the "Rally" command is used&Falcon Knight
+Warding Blow&When user triggers the battle, magical damage received -20&Falcon Knight
+Air Superiority&Hit rate and Avoid +30 when facing Flying enemies&Kinshi Knight
+Amaterasu&Allies within a 2 tile radius recover 20% HP at the start of the user's Turn&Kinshi Knight
+Skill +2&Skill +2&Archer
+Quick Draw&When user triggers the battle, damage +4&Archer
+Certain Blow&When user triggers the battle, Hit rate +40&Sniper
+Bowfaire&When user is equipped with a Bow, damage +5 during battle&Sniper
+Locktouch&User can open doors and chests without requiring keys&Ninja
+Poison Strike&When user triggers the battle, the enemy's HP is reduced by 20% after the battle&Ninja
+Lethality&Skill x 0.25% chance of instantly defeating the enemy when dealing 1 or more damage&Master Ninja
+Shurikenfaire&When user is equipped with a Dagger, damage +5 during battle&Master Ninja
+Golembane&Attacks are effective against Mechanists, Automatons, and Stoneborn&Mechanist
+Replicate&Select the "Replicate" command once per map to create a replica with the same appearance, stats, inventory, and HP as the user (Anything that happens to the replica happens to the user and vice versa - even death)&Mechanist
+Potent Potion&The effect of HP recovery and stat-boosting potions is increased by 50%&Apothecary
+Quick Salve&After consuming a HP recovery or stat-boosting potion, the user can preform another action&Apothecary
+Profiteer&Luck% chance of obtaining a Gold Bar after moving during the first seven Turns&Merchant
+Spendthrift&During battles, user spends a Gold Bar for damage +10 and damage received -10&Merchant
+Evenhanded&During even-numbered Turns, damage +4&Kitsune
+Beastbane&When user is a Wolfskin or Kitsune, their attacks are effective against Beast units&Kitsune
+Even Better&Recover 40% HP at the start of even-numbered Turns&Nine-Tails
+Grisly Wound&The enemy's HP is reduced by 20% after the battle&Nine-Tails
+Luck +4&Luck +4&Songstress
+Inspiring Song&Skill, Speed, and Luck +3 for one Turn for the unit who receives the user's song&Songstress
+Voice of Peace&Enemies within a 2 tile radius deal 2 less physical damage&Songstress
+Foreign Princess&"Foreign Army" enemies within a 2 tile radius deal 2 less damage and receive 2 extra damage&Songstress
+Aptitude&Adds 10% to all growth rates during Level Ups&Villager
+Underdog&Hit rate and Avoid +15 when user's Level is lower than the enemy (promoted units count as Level +20)&Villager
+Nobility&Experience gained x 1.2&Nohr Prince
+Dragon Fang&Skill x 0.75% chance of adding 50% of the user's Attack Power as damage&Nohr Prince
+Draconic Hex&After battle, enemy's stats -4&Nohr Noble
+Nohrian Trust&User shares their support unit's battle skills&Nohr Noble
+Elbow Room&When user fights in terrain with no terrain effects, damage +3 during battles&Cavalier
+Shelter&Select the "Shelter" command to make an adjacent ally the user's support unit&Cavalier
+Defender&When user is the lead unit while paired up, all stats +1&Paladin
+Aegis&Skill% chance of halving damage from Bow, Magic, Dagger, Dragonstone, Breath, or Stone attacks&Paladin
+Luna&Skill% chance of ignoring half the enemy's Decence(if user has a physical weapon) or Resistance(if user has a magical weapon)&Great Knight
+Armored Blow&When user triggers the battle, physical damage received -10&Great Knight
+Defence +2&Defence +2&Knight
+Natural Cover&When user fights in terrain with terrain effects, damage received -3 during battles&Knight
+Wary Fighter&During battles, neither the user or enemy can perform follow up attacks&General
+Pavise&Skill% chance of halving damage from Sword, Lance, Axe, Beaststone, Claw, or Puppet attacks&General
+HP +5&Maximum HP +5&Fighter
+Gamble&Hit rate -10, Critical rate +10&Fighter
+Rally Strength&Strength +4 to all allies within a 2 tile radius for one Turn when the "Rally" command is used&Berserker
+Axefaire&When user is equipped with an Axe, damage +5 during battle&Berserker
+Good Fortune&Luck% chance of recovering 20% HP at the start of the user's Turn&Mercenary
+Strong Riposte&When enemy triggers the battle, damage +3&Mercenary
+Sol&Skill% chance of restoring half the damage dealt to the enemy&Hero
+Axebreaker&Hit rate and Avoid +50 when the enemy is equipped with an Axe&Hero
+Rally Skill&Skill +4 to all allies within a 2 tile radius for one Turn when the "Rally" command is used&Bow Knight
+Shurikenbreaker&Hit rate and Avoid +50 when the enemy is equipped with a Dagger&Bow Knight
+Movement +1&Movement +1&Outlaw
+Lucky Seven&Hit rate and Avoid +20 for the first seven Turns&Adventurer
+Pass&User can pass through tiles occupied by enemy units&Adventurer
+Strength +2&Strength +2&Wyvern Rider
+Lunge&Select the "Lunge" command to swap places with an enemy after an attack&Wyvern Rider
+Rally Defence&Defence +4 to all allies within a 2 tile radius for one Turn when the "Rally" command is used&Wyvern Lord
+Swordbreaker&Hit rate and Avoid +50 when the enemy is equipped with a Sword&Wyvern Lord
+Savage Blow&When user triggers the battle, enemies within a 2 tile radius have their HP reduced by 20% after the batttle&Malig Knight
+Trample&Unless enemy is on a mount, damage +5&Malig Knight
+Heartseeker&When fighting adjacent to an enemy, enemy's Avoid -20&Dark Mage
+Malefic Aura&Enemies within a 2 tile radius receive 2 extra damage from magical attacks&Dark Mage
+Vengeance&Skill x 1.5% chance of adding half the user's (Max HP - Current HP) as damage&Sorcerer
+Bowbreaker&Hit rate and Avoid +50 when the enemy is equipped with a Bow&Sorcerer
+Seal Magic&After battle, enemy's Magic -6&Dark Knight
+Lifetaker&When user triggers battle, recover 50% HP after defeating the enemy&Dark Knight
+Resistance +2&Resistance +2&Troubadour
+Gentilhomme&Female allies within a 2 tile radius receive 2 less damage during battles&Troubadour
+Rally Resistance&Resistance +4 to all allies within a 2 tile radius for one Turn when the "Rally" command is used&Strategist
+Inspiration&Allies within a 2 tile radius deal 2 extra damage and receive 2 less damage during battles&Strategist
+Live to Serve&When healing an ally, the user recovers the same amount of HP&Butler
+Tomebreaker&Hit rate and Avoid +50 when the enemy is equipped with a Tome&Butler
+Odd Shaped&During odd-numbered Turns, damage +4&Wolfskin
+Better Odds&Recover 40% HP at the start of odd-numbered Turns&Wolfssegner

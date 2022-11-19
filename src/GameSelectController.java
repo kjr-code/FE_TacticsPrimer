@@ -1,4 +1,4 @@
-package Controllers;
+
 
 import java.io.IOException;
 import java.net.URL;
@@ -27,7 +27,7 @@ public class GameSelectController implements Initializable {
     @FXML
     private ImageView menuLogo; 
     
-    private String[] games = {"Fire Emblem: Fates", "Fire Emblem: Awakening", "Fire Emblem: Three Houses"};
+    private String[] games = {"Fire Emblem: Fates"};
     private Stage mStage;
     private Scene mScene;
     private Parent mRoot;
@@ -43,17 +43,24 @@ public class GameSelectController implements Initializable {
                 e.printStackTrace();
             }
         });
+
+        
     }
 
     public void makeSelection(ActionEvent event) throws IOException{
         //String selectedGame = gameBox.getValue();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Fates.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Controllers/unitDataCard.fxml"));
         mRoot = loader.load();
-
+        UnitDataCardController nextSceneController = loader.getController();
+        //nextSceneController.setDefaultCharacter();
+        DataGrabber.getData();
+        nextSceneController.setDefaultCharacter("Silas");
+        System.out.println("DATA GRABBER GET DATA MAKE SELECTION GAMESELECTCONTROLLER");
         mStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         mScene = new Scene(mRoot);
         mStage.setScene(mScene);
         mStage.show();
         mStage.centerOnScreen();
+        //communicate between scenes, set the default char
     }
 }

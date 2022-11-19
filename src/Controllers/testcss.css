@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+/* CSS set in SceneBuilder */
+.column-header.table-column .label{
+	-fx-padding: 10px;
+	-fx-font-family: 'Ubuntu Mono', monospace;
+	-fx-font: 14 'Ubuntu';
+	-fx-font-weight: bold;
+	/* -fx-background-color: #ffd369; */
+}
+
+.column-header.table-column{
+	-fx-background-color:#ffd369;
+}
+
+.table-column{
+	-fx-alignment: CENTER;
+}

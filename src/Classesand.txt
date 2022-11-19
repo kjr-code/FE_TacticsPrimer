@@ -1,0 +1,53 @@
+Nohr Prince&A Nohrian royal fitted with their kingdon's equipment. Their body conceals the power of dragons.
+Samurai&Those who follow the path of the katana. Excels in battle by taking advantage of its speed.
+Villager&Common folk who live in villages. During battles, they fight wielding naginatas.
+Apothecary&Herb-sellers with extensive knowledge of herbs. They protect themselves with yumi.
+Ninja&Those who freely operate in the shadows. They use shurikens to attack and weaken enemies.
+Oni Savage&A demon-like warrior who wields clubs. Boasts high offense and defense.
+Spear Fighter&Those who follow the path of the naginata. Excels in battle by dropping the enemy's defense.
+Diviner&Those who study the art of spell-casting. They fight using Hoshidan scrolls.
+Monk&Men who study to attain enlightenment. They can heal allies with rods.
+Sky Knight&Warriors who soar the skies astride a pegasus. Has excellent speed and resistance.
+Archer&Those who follow the path of the yumi. Has superior skill.
+Kitsune&A long-living fox who bewitches humans. Boasts high speed and resistance.
+Songstress&A female who calms minds with her beautiful songs. Can sing to alllow allies another action.
+Hoshido Noble&Royals whose heart aligns with Hoshido. Wields rods in addition to katanas and dragonstones.
+Swordmaster&Those who have reached the pinnacle of the katana. Has exceptional speed and evasion.
+Master of Arms&Those who can handle any type of enemy. Adept with katanas, naginatas, and clubs.
+Merchant&Merchants with excellent business acumen. They protect their fortune with naginatas and yumi.
+Mechanist&Artisans who craft puppets. They wield shurikens and yumi with great dexterity.
+Master Ninja&Ninja leaders. They excecute targets with their shurikens and katanas.
+Oni Chieftan&Those who have transcended to become a demon-god. They pulverise enemies with their clubs and spells.
+Blacksmith&Artisans who craft weapons. Wields katanas and clubs and boasts superior skill.
+Spear Master&Those who have reached the pinnacle of the naginata. Has stable abilities.
+Basara&Those who prefer a quirky and free-spirited life. Disrupts enemies with their naginatas and scrolls.
+Onmyoji&Those who have learned myriad spells. Well-versed with both scrools and rods.
+Great Master&Men who have journeyed to enlightenment. They heal with rods and vanquish foes with naginatas.
+Falcon Knight&High-ranking Sky Knights. In addition to naginatas, they can guard allies with rods.
+Kinshi Knight&Those who fight astride the fabled golden kite. With their naginatas and yumi, they dominate the skies.
+Sniper&Those who have reached the pinnacle of the yumi. Has exceptional accuracy and critical rate.
+Nine-Tails&A high-ranking fox with great spiritual power. Has better abilities than a Kitsune.
+Cavalier&Knights who fights on horseback. Can use both swords and lances.
+Knight&Foot-soldiers encased in heavy armour. Slow but has high defense.
+Fighter&Axe-fighters with a superior body. Has high attack power, but weak defenses.
+Mercenary&Sellswords who can handle any mission. They have well-balanced abilities and superior skill.
+Outlaw&Crooks who are skilled at picking locks. Wields bows and boasts high speed and resistance.
+Wyvern Rider&Knights who fight astride a wyvern. has superior strength and defense.
+Dark Mage&Sorcerers who have learned Nohrian magic. They attack enemies with magic.
+Troubadour&Staff-wielding knights who are incapable of fighting. Instead, they heal allies with staves.
+Wolfskin&A werewolf said to feast on the flesh of humans. Has excellent strength and speed.
+Nohr Noble&Royals whose heart aligns with Nohr. Wields magic in addition to swords and dragonstones.
+Paladin&High-ranking knights praised for their bravery. They have better capabilities than a Cavalier.
+Great Knight&Armoured riders. Capable of wielding swords, lances, and axes.
+General&Generals fortified from head to foot with heavy armour. They possess exceptional defense.
+Berserker&Crazed fighters who fight with axes. They excel at performing critical hits.
+Hero&Heroes renowned for their bravery. They wield swords and axes and can adapt to any situation.
+Bow Knight&Knights who rain arrows from horseback. In addition to bows, they can wield swords.
+Adventurer&Glory-seekers who investigate ruins for treasure. With their bows and staves, they're capable of many things.
+Wyvern Lord&High-ranking wyvern riders. With their axes and lances, they demolish enemy forces.
+Malig Knight&Knights who command a mage dragon. With their axes and magic, they trample over enemy forces.
+Sorcerer&High-ranking sorcerers who have reached the esoteric pinnacle. They posess exceptional magic.
+Dark Knight&Magic knights whose bodies are infused with sorcery. They're capable of harnessing swords and magic.
+Strategist&Tacticians who command the battlefield from horseback. With their magic and staves, they turn the tide of battle.
+Butler&Male vassals who serve a master. They heal their master with staves and protect them with daggers.
+Wolfssegner&A high-ranking werewolf with a more resilient body. Has better abilities than a Wolfskin.

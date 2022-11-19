@@ -4,10 +4,6 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
-import javafx.scene.image.Image;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 
 
@@ -17,8 +13,12 @@ public class App extends Application{
     public void start(Stage primaryStage) throws Exception{
         
         Parent root = FXMLLoader.load(getClass().getResource("Controllers/GameSelect.fxml"));
-        Scene badTut = new Scene(root);
-        primaryStage.setScene(badTut);
+        Scene scene = new Scene(root);
+        //TODO :T
+        //badTut.getStylesheets().add(getClass().getResource("flatStyles.css").toExternalForm());
+        String css = this.getClass().getResource("flatStyles.css").toExternalForm();
+        primaryStage.setScene(scene);
+        scene.getStylesheets().add(css);
         primaryStage.setTitle("FE Tactics Primer v 0.01");
         primaryStage.show();
         primaryStage.centerOnScreen();
