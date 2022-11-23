@@ -2,17 +2,36 @@
 
 /* CSS set in SceneBuilder */
 .column-header.table-column .label{
-	-fx-padding: 10px;
+	/* -fx-padding: 10px; */
+	-fx-pref-height: 56px;
 	-fx-font-family: 'Ubuntu Mono', monospace;
 	-fx-font: 14 'Ubuntu';
 	-fx-font-weight: bold;
 	/* -fx-background-color: #ffd369; */
 }
 
+.table-view .scroll-bar{
+	/* Creds to the user from https://stackoverflow.com/questions/55093764/javafx-how-to-disable-scrollbars-in-tableview */
+	/* That we have to use this workaround is incredibly asinine */
+	-fx-min-with:0;
+	-fx-max-width:0;
+	-fx-pref-width:0;
+
+	-fx-min-height:0;
+	-fx-pref-height:0;
+	-fx-max-height:0;
+}
 .column-header.table-column{
 	-fx-background-color:#ffd369;
+	/* -fx-max-height: 56px; */
+	-fx-pref-height: 56px;
 }
 
 .table-column{
 	-fx-alignment: CENTER;
+	-fx-font: 14 'Ubuntu';
+	-fx-font-weight: bold;
+	/* -fx-padding:10px;
+	-fx-font-family:'Ubuntu Mono', monospace;
+	-fx-font: 14 'Ubuntu'; */
 }

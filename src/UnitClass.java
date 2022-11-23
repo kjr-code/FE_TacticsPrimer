@@ -2,7 +2,7 @@ import javafx.scene.image.Image;
 import java.util.ArrayList;
 
 public class UnitClass {
-    private String className;
+    public String className;
     private String classDesc;
     private Image genericPortrait;
     private int[] growthRates = new int[8];
@@ -12,6 +12,8 @@ public class UnitClass {
     //wouldn't need to import arrayList if you coded this better 4head
 
     public Growths classGrowths;
+    //TODO DBMS makes this vanish
+    public ArrayList<UnitClass> promotedClasses = new ArrayList<UnitClass>();
 
     public UnitClass(){
         //comment

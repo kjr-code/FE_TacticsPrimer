@@ -16,8 +16,10 @@ public class DataGrabber {
         String dbFile = "src\\Fates.csv";
         String skillsDBFile = "src\\Skillsand.txt";
         String classesDBFile = "src\\Classesand.txt";
-        String mapSpritesFolder =  "src\\Images\\MapSprites";
+        String classSetsFile = "src\\ClassSets.txt";
+        String mapSpritesFolder =  "src\\Images\\MapSpritesFixed";
         String portraitsFolder = "src\\Images\\Portraits";
+        String classTreeFile = "src\\ClassTrees.txt";
 
         try{
             File file = new File(dbFile);
@@ -62,6 +64,20 @@ public class DataGrabber {
                 classHash.put(classData[0], thisClass);
             }
             classScanner.close();
+            //TODO: after the classHash is completed, iterate through classTrees file and add "superclasses" to each base class
+            //TODO: you probably need to add a "promotedClasses" field in the UnitClass class
+            File promotedClassFile = new File(classTreeFile);
+            Scanner treeScanner = new Scanner(promotedClassFile);
+            while(treeScanner.hasNextLine()){
+                String nextTree = treeScanner.nextLine();
+                String [] split = nextTree.split("&");
+                if(split.length > 1){
+                    UnitClass thisBase = classHash.get(split[0]);
+                    //TODO this is gonna need to get cleaned up and go in a loop or switch of some sort
+                    thisBase.promotedClasses.add(classHash.get(split[1]));
+                }
+            }
+            treeScanner.close();
 
             //skills
             File skillsFile = new File(skillsDBFile);
@@ -78,6 +94,24 @@ public class DataGrabber {
                     System.out.println("HEY! WARNING! Can't find the "+skillData[2]+" class that the skill "+skillData[0]+" is supposed to go with");
                 }
             }
+            skillScanner.close();
+
+            //get available classes
+            File setsFile = new File(classSetsFile);
+            Scanner classSetsScanner = new Scanner(setsFile);
+            while(classSetsScanner.hasNextLine()){
+                String nextUnit = classSetsScanner.nextLine();
+                String[] avClasses = nextUnit.split("&");
+                //doesn't need a variable
+                String whichUnit = avClasses[0];
+                Character myGuy = DataGrabber.charHM.get(whichUnit);
+                for(int i = 1; i < avClasses.length; i++){
+                    myGuy.acquireClass(avClasses[i]);
+                }
+            }
+            classSetsScanner.close();
+
+            
             
 
         } catch(FileNotFoundException e) {

@@ -54,7 +54,7 @@ public class GameSelectController implements Initializable {
         UnitDataCardController nextSceneController = loader.getController();
         //nextSceneController.setDefaultCharacter();
         DataGrabber.getData();
-        nextSceneController.setDefaultCharacter("Silas");
+        nextSceneController.setDefaultCharacter("Laslow");
         System.out.println("DATA GRABBER GET DATA MAKE SELECTION GAMESELECTCONTROLLER");
         mStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         mScene = new Scene(mRoot);
