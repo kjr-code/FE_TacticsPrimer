@@ -31,6 +31,7 @@ public class GameSelectController implements Initializable {
     private Stage mStage;
     private Scene mScene;
     private Parent mRoot;
+    private Parent mRoot2;
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
@@ -50,14 +51,19 @@ public class GameSelectController implements Initializable {
     public void makeSelection(ActionEvent event) throws IOException{
         //String selectedGame = gameBox.getValue();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Controllers/unitDataCard.fxml"));
+        FXMLLoader loader2 = new FXMLLoader(getClass().getResource("Controllers/jankee.fxml"));
         mRoot = loader.load();
+        mRoot2 = loader2.load();
         UnitDataCardController nextSceneController = loader.getController();
-        //nextSceneController.setDefaultCharacter();
-        DataGrabber.getData();
-        nextSceneController.setDefaultCharacter("Laslow");
-        System.out.println("DATA GRABBER GET DATA MAKE SELECTION GAMESELECTCONTROLLER");
+        UnitViewer nextSceneCont = loader2.getController();
+        //TODO: start changes tuesday here
+        //DataGrabber.getData();
+        //nextSceneController.setDefaultCharacter("Hana");
+        nextSceneCont.setDisplayCharacter(DB.characters.get("Ryoma"));
+        //System.out.println("DATA GRABBER GET DATA MAKE SELECTION GAMESELECTCONTROLLER");
         mStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        mScene = new Scene(mRoot);
+        //mScene = new Scene(mRoot);
+        mScene = new Scene(mRoot2);
         mStage.setScene(mScene);
         mStage.show();
         mStage.centerOnScreen();

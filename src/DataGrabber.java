@@ -15,7 +15,7 @@ public class DataGrabber {
     public static void getData() throws FileNotFoundException{
         String dbFile = "src\\Fates.csv";
         String skillsDBFile = "src\\Skillsand.txt";
-        String classesDBFile = "src\\Classesand.txt";
+        String classesDBFile = "src\\ClassDescs.txt";
         String classSetsFile = "src\\ClassSets.txt";
         String mapSpritesFolder =  "src\\Images\\MapSpritesFixed";
         String portraitsFolder = "src\\Images\\Portraits";
@@ -64,6 +64,7 @@ public class DataGrabber {
                 classHash.put(classData[0], thisClass);
             }
             classScanner.close();
+            /* 
             //TODO: after the classHash is completed, iterate through classTrees file and add "superclasses" to each base class
             //TODO: you probably need to add a "promotedClasses" field in the UnitClass class
             File promotedClassFile = new File(classTreeFile);
@@ -78,6 +79,7 @@ public class DataGrabber {
                 }
             }
             treeScanner.close();
+            */
 
             //skills
             File skillsFile = new File(skillsDBFile);
@@ -105,6 +107,7 @@ public class DataGrabber {
                 //doesn't need a variable
                 String whichUnit = avClasses[0];
                 Character myGuy = DataGrabber.charHM.get(whichUnit);
+                System.out.println("What happens HERE? "+myGuy.name);
                 for(int i = 1; i < avClasses.length; i++){
                     myGuy.acquireClass(avClasses[i]);
                 }

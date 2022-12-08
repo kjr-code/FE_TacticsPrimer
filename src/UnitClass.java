@@ -1,26 +1,17 @@
-import javafx.scene.image.Image;
 import java.util.ArrayList;
 
 public class UnitClass {
     public String className;
     private String classDesc;
-    private Image genericPortrait;
     private int[] growthRates = new int[8];
-
-    //public Skill[] classSkills = new Skill[2];
-    public ArrayList<Skill> classSkills = new ArrayList<Skill>();
-    //wouldn't need to import arrayList if you coded this better 4head
-
     public Growths classGrowths;
-    //TODO DBMS makes this vanish
+    //this code represents the same data unnecessarily
+
+    public ArrayList<Skill> classSkills = new ArrayList<Skill>();
+
     public ArrayList<UnitClass> promotedClasses = new ArrayList<UnitClass>();
+    //PromotedClasses can go into a "baseUnitClass" class whih extends UnitClass and has extra fields
 
-    public UnitClass(){
-        //comment
-    }
-
-    //TODO this shouldn't live here long, code is very WET and needs refactoring
-    //also variable naming conventions are inconsistent with rest of project
     public UnitClass(String className, String classDesc){
         this.className = className;
         this.classDesc = classDesc;
@@ -30,7 +21,12 @@ public class UnitClass {
         classSkills.add(skillName);
     }
 
+    //TODO potentially unnecessary method here
     public Growths getGrowths(){
         return new Growths(growthRates);
+    }
+
+    public void setGrowths(Growths growthsArg){
+        classGrowths = growthsArg;
     }
 }

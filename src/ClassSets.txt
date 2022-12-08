@@ -1,3 +1,5 @@
+Corrin(Male)&Nohr Prince
+Corrin(Female)&Nohr Prince
 Felicia&Troubadour&Mercenary
 Jakob&Troubadour&Cavalier
 Kaze&Ninja&Samurai
@@ -25,7 +27,20 @@ Kaden&Kitsune&Diviner
 Ryoma&Samurai&Sky Knight
 Scarlet&Wyvern Rider&Outlaw
 Yukimura&Apothecary&Samurai&Monk
-Kana&Nohr Prince
+Kana(Male)&Nohr Prince
+Kana(Female)&Nohr Prince
+Shigure&Sky Knight&Troubadour
+Dwyer&Troubadour&Cavalier
+Sophie&Cavalier&Mercenary
+Midori&Apothecary&Ninja
+Shiro&Spear Fighter&Samurai
+Kiragi&Archer&Spear Fighter
+Asugi&Ninja&Samurai
+Selkie&Kitsune&Diviner
+Hisame&Samurai&Oni Savage
+Mitama&Monk&Great Master
+Caeldori&Sky Knight&Samurai
+Rhajat&Diviner&Oni Savage
 Gunter&Cavalier&Mercenary&Wyvern Rider
 Elise&Troubadour&Wyvern Rider
 Arthur&Fighter&Cavalier
@@ -52,3 +67,5 @@ Percy&Wyvern Rider&Fighter
 Ophelia&Dark Mage&Samurai
 Soleil&Mercenary&Ninja
 Nina&Outlaw&Dark Mage
+Fuga&Samurai&Oni Savage&Monk
+Anna&Outlaw&Apothecary&Troubadour

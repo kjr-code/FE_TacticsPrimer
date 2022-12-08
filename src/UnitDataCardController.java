@@ -45,6 +45,7 @@ public class UnitDataCardController implements Initializable {
 
     public void setDefaultCharacter(String charName){
         Character defaultChar = DataGrabber.charHM.get(charName);
+        System.out.println("Made it here! setDefaultCharacter");
         mapSpriteView.setImage(defaultChar.getMapSprite());
         whomstLabel.setText(charName);
         updateGrowths(charName);
