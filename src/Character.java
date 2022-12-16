@@ -54,6 +54,17 @@ public class Character {
         classStringArray.add(DataGrabber.classHash.get(whichClass).className);
     }
 
+    //TODO: following 2 methods are extremely wet and need revision
+    public void obtainClass(String whichClass){
+        availableClasses.add(DB.baseClasses.get(whichClass));
+        classStringArray.add(DB.baseClasses.get(whichClass).className);
+    }
+
+    public void obtainPromotedClass(String whichClass){
+        availableClasses.add(DB.promotedClasses.get(whichClass));
+        classStringArray.add(DB.promotedClasses.get(whichClass).className);
+    }
+
     //Takes in a base class (or a string naming one) as an arg and checks "classTrees" for the remaining classes
     public void addClassLine(String whichClass){
         availableClasses.add(DB.baseClasses.get(whichClass));

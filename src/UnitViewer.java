@@ -2,16 +2,19 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
+//import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 
 public class UnitViewer implements Initializable{
     public Character displayedCharacter;
-    public ListView<String> charSelectListView;
+    public UnitClass currentClass;
+
+    //public ListView<String> charSelectListView;
 
     //TODO ascertain whether or not this is the only way to accomplish this
     @FXML private Label HPValue;
@@ -25,40 +28,64 @@ public class UnitViewer implements Initializable{
     
     @FXML private ImageView portraitView;
     @FXML private ImageView mapSpriteView;
+    //TODO: update this variable name to something that denotes that it's specifically the choicebox and not the
+    //underlying list of UnitClasses
     @FXML private ChoiceBox<String> thisUnitsClasses;
     @FXML private Label nameLabel;
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
-        //TODO: setOnAction for dropdown list 
+        System.out.println("Calling initialize!");
+        displayedCharacter = DB.characters.get("Xander");
+        setDisplayCharacter(displayedCharacter);
+        //thisUnitsClasses.setOnAction(this::updateClass);
+        thisUnitsClasses.setOnAction(e -> changeCurrentClass(DB.grabClass(thisUnitsClasses.getValue())));
+        //bruh
     }
 
-    //TODO: cache whichCharacter.growths into a local variable since you access it so much
     public void setDisplayCharacter(Character whichCharacter){
-        System.out.println(whichCharacter.name);
-        //Extremely lazy (efficient?) casting from int to String
-        HPValue.setText(""+whichCharacter.growths.HPGrowth);
-        STRValue.setText(""+whichCharacter.growths.STRGrowth);
-        MAGValue.setText(""+whichCharacter.growths.MAGGrowth);
-        //SKLValue.setText(""+whichCharacter.growths.SKLGrowth);
-        //SPDValue.setText(""+whichCharacter.growths.SPDGrowth);
-        //LCKValue.setText(""+whichCharacter.growths.LCKGrowth);
-        //DEFValue.setText(""+whichCharacter.growths.DEFGrowth);
-        //RESValue.setText(""+whichCharacter.growths.RESGrowth);
-        //TODO this can almost certainly be put in a loop
+        System.out.println("Now viewing: "+whichCharacter.name);
+        displayedCharacter = whichCharacter;
 
+        //update character specific elements: name, portraits, class selection
         portraitView.setImage(whichCharacter.getPortrait());
         mapSpriteView.setImage(whichCharacter.getMapSprite());
+        nameLabel.setText(whichCharacter.name);
 
-        //TODO address the type safety warning you generate here
-        //thisUnitsClasses.setItems(FXCollections.observableArrayList(whichCharacter.availableClasses));
-        thisUnitsClasses.setItems(FXCollections.observableArrayList(whichCharacter.classStringArray));
-        //TODO set the selected option to, say, the first unitclass in this new list
-        //thisUnitsClasses.getSelectionModel().select(FXCollections.observableArrayList(whichCharacter.availableClasses.get(0)));
-        thisUnitsClasses.getSelectionModel().select(whichCharacter.classStringArray.get(0));
 
-        //update weapon usage display ( may be included in the previous step )
-        //update skills display
+        //TODO: probably turn this into a for each loop, which will eliminate the need for the "classStringArray"
+        //TODO: or, potentially even better, write a static method that takes in an arraylist of classes as input
+        //TODO: and adds the String returned by "getName" into a seperate observable list
+        thisUnitsClasses.getItems().addAll(whichCharacter.classStringArray);
+        currentClass = whichCharacter.availableClasses.get(0);
+        thisUnitsClasses.getSelectionModel().select(currentClass.className);
+        changeCurrentClass(currentClass);
+    }
+
+    public void changeCurrentClass(UnitClass newClass){
+        //TODO: change displayed skills
+        currentClass = newClass;
+        int displayedHP = displayedCharacter.growths.HPGrowth + newClass.getGrowths().HPGrowth;
+        int displayedSTR = displayedCharacter.growths.STRGrowth + newClass.getGrowths().STRGrowth;
+        int displayedMAG = displayedCharacter.growths.MAGGrowth + newClass.getGrowths().MAGGrowth;
+
+        HPValue.setText(""+displayedHP);
+        STRValue.setText(""+displayedSTR);
+        MAGValue.setText(""+displayedMAG);
+        thisUnitsClasses.getSelectionModel().select(currentClass.className);
+    }
+
+    //TODO: figure out exactly how to merge this method with the above method
+    //TODO: will likely involve making "changeCurrentClass" not take in an argument, and instead just
+    //take its values from "displayChar/displayClass", which would get updated by the event trigger (?)
+    public void updateClass(ActionEvent event){
+        //String prevValue = currentClass.className;
+        String argClassName = thisUnitsClasses.getValue();
+        UnitClass argClass = DB.grabClass(argClassName);
+        if(argClass != null){
+            //System.out.println("Did I change the class? From "+prevValue+" to "+argClassName);
+            changeCurrentClass(argClass);
+        }
     }
     
 }

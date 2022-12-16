@@ -1,5 +1,5 @@
-Corrin(Male)&Nohr Prince
-Corrin(Female)&Nohr Prince
+Corrin(Male)&Nohr Prince(ss)
+Corrin(Female)&Nohr Prince(ss)
 Felicia&Troubadour&Mercenary
 Jakob&Troubadour&Cavalier
 Kaze&Ninja&Samurai
@@ -27,8 +27,8 @@ Kaden&Kitsune&Diviner
 Ryoma&Samurai&Sky Knight
 Scarlet&Wyvern Rider&Outlaw
 Yukimura&Apothecary&Samurai&Monk
-Kana(Male)&Nohr Prince
-Kana(Female)&Nohr Prince
+Kana(Male)&Nohr Prince(ss)
+Kana(Female)&Nohr Prince(ss)
 Shigure&Sky Knight&Troubadour
 Dwyer&Troubadour&Cavalier
 Sophie&Cavalier&Mercenary

@@ -107,7 +107,7 @@ public class DataGrabber {
                 //doesn't need a variable
                 String whichUnit = avClasses[0];
                 Character myGuy = DataGrabber.charHM.get(whichUnit);
-                System.out.println("What happens HERE? "+myGuy.name);
+                //System.out.println("What happens HERE? "+myGuy.name);
                 for(int i = 1; i < avClasses.length; i++){
                     myGuy.acquireClass(avClasses[i]);
                 }

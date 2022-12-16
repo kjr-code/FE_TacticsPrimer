@@ -23,7 +23,9 @@ public class UnitClass {
 
     //TODO potentially unnecessary method here
     public Growths getGrowths(){
-        return new Growths(growthRates);
+        //return new Growths(growthRates);
+        return classGrowths;
+        //TODO boiiiiii
     }
 
     public void setGrowths(Growths growthsArg){

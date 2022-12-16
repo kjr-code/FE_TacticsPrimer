@@ -11,11 +11,10 @@ public class App extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        DataGrabber.getData();
+        //DataGrabber.getData();
         DB.loadData();
         Parent root = FXMLLoader.load(getClass().getResource("Controllers/GameSelect.fxml"));
         Scene scene = new Scene(root);
-        //TODO :T
         //badTut.getStylesheets().add(getClass().getResource("flatStyles.css").toExternalForm());
         String css = this.getClass().getResource("flatStyles.css").toExternalForm();
         primaryStage.setScene(scene);

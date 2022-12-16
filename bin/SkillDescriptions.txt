@@ -1,0 +1,114 @@
+Nobility&Increases EXP gained by 20&nobility
+Dragon Fang&Inflicts half of unit's attack power as extra damage. Trigger% = (SKL stat x 0.75)&dragonFang
+Dragon Ward&Halve damage when adjacent ally is attacked. Trigger% = (target's LCK x 0.5)&dragonWard
+Hoshidan Unity&Adds 10% to combat Skill activation rates.&hoshidanUnity
+Draconic Hex&After combat, reduce all enemy stats by 4 (recovers 1/turn)&draconicHex
+Nohrian Trust&User shares supporting unit's battle skills.&nohrianTrust
+Luck +4&Luck +4&luckPlus4
+Inspiring Song&"Sing" command grants recipient SKL, SPD, and LCK 3 for one turn.&inspiringSong
+Voice of Peace&Enemies within 2 tiles deal 2 less physical damage.&voiceOfPeace
+Foreign Princess&Foreign army enemies within 2 tiles get -2/+2 to damage dealt/received.&foreignPrincess
+Duelist's Blow&Avoid +30 when user triggers battle.&duelistsBlow
+Vantage&At start of combat, if HP=50% or less, always strike first, even when attacked.&vantage
+Astra&Strike 5 times at half damage. Trigger % = (SKL stat x 0.5)&astra
+Swordfaire&Damage dealt+5 when equipped with a Sword or Katana.&swordfaire
+Seal Strength&After battle, lowers enemy STR by 6 (recovers 1/turn)&sealStrength
+Life and Death&During battles, +10 to damage dealt/received.&lifeAndDeath
+Seal Resistance&After battle, lowers enemy RES by 6 (recovers 1/turn)&sealResistance
+Shove&Use "Shove" command to push an adjacent ally 1 tile.&shove
+Death Blow&Crit Rate +20 when user triggers battle.&deathBlow
+Counter&Damage taken from an adjacent attacking enemy is also dealt back to that foe.&counter
+Salvage Blow&Receive a basic weapon when attacking and defeating foe. Trigger% = (LCK stat)&salvageBlow
+Lancebreaker&Grants Hit/Avo+50 if the enemy is using a lance/naginata.&lancebreaker
+Seal Defense&After battle, lowers enemy DEF by 6 (recovers 1/turn).&sealDefense
+Swap&Grants use of Swap command. Use to switch spaces with an adjacent ally.&Swap
+Seal Speed&After battle, lowers enemy SPD by 6 (recovers 1/turn)&sealSpeed
+Lancefaire&Damage dealt+5 when equipped with a Lance or Naginata.&lancefaire
+Rend Heaven&Deal half foe's Str or Mag as bonus damage. Trigger % = (Skill stat x 1.5)&rendHeaven
+Quixotic&Grants Hit+30 and +15% to skill-trigger rate to this unit and enemy in combat.&quixotic
+Magic +2&Magic +2&magicPlus2
+Future Sight&Double EXP if the unit attacks and defeats an enemy. Trigger % = (LCK stat)&futureSight
+Rally Magic&Use "Rally" to grant Mag+4 to units within two spaces for one turn.&rallyMagic
+Tomefaire&+5 damage dealt if using a Tome/Scroll.&tomefaire
+Miracle&If HP > 1, survive a lethal attack with 1HP remaining. Trigger % = (LCK stat)&miracle
+Rally Luck&Use "Rally" to graint Luck+8 to units within two spaces for one turn.&rallyLuck
+Renewal&Restores up to 30% HP at the start of each turn.&renewal
+Countermagic&Magic damage taken from an attacking enemy is also dealt back to that foe.&countermagic
+Darting Blow&Increases chance of follow-up attack when this unit initiates an attack. (+5 eff. Spd.)&dartingBlow
+Camaraderie&Restores up to 10% HP each turn if an ally is within two spaces.&camaraderie
+Rally Speed&Use "Rally" to grant Speed+4 to units within two spaces for one turn.&rallySpeed
+Warding Blow&Unit receives -20 magical damage when the unit initiates an attack.&wardingBlow
+Air Superiority&Grants Hit/Avo +30 when battling flying enemies.&airSuperiority
+Amaterasu&Restores up to 20% HP of allies within 2 spaces at the start of each turn.&amaterasu
+Skill +2&Skill +2&skillPlus2
+Quick Draw&This unit deals +4 damage when initiating combat.&quickDraw
+Certain Blow&Grants Hit +40 when the unit initiates an attack.&certainBlow
+Bowfaire&+5 damage dealt if using a Bow/Yumi.&bowfaire
+Locktouch&Allows the user to open doors and chests without keys.&locktouch
+Poison Strike&Enemies lose up to 20% HP after any combat this unit initiates.&poisonStrike
+Lethality&Fell an enemy in one hit (the hit must do damage). Trigger % = (Skill stat x 0.25)&lethality
+Shurikenfaire&+5 damage dealt if using a Shuriken/Daggger.&shurikenfaire
+Golembane&Enables unit to deal bonus damage to mechanists, automatons, and stoneborn.&golembane
+Replicate&Grants use of Replicate command. Use once per battle to create a replica.&replicate
+Potent Potion&Makes most HP-recovery and stat-boosting items 150% as potent.&potentPotion
+Quick Salve&Can take another action after using a recovery item or tonic.&quickSalve
+Profiteer&Get a Gold Bar on each of the unit's first 7 turns. Trigger % = (Lck stat)&profiteer
+Spendthrift&When attacking, unit expends a held gold bar for +10/-10 to damage dealt/taken.&spendthrift
+Evenhanded&This unit deals +4 damage on even-numbered turns.&evenhanded
+Beastbane&Allows units in beast form to deal bonus damage to beasts/riders.&beastbane
+Even Better&Recover 40% of user's HP at the start of even-numbered turns.&evenBetter
+Grisly Wound&Enemies lose up to 20% of HP after any combat with this unit.&grislyWound
+Luck +4&Luck +4&luckPlus4
+Inspiring Song&Use "Sing" to grant an ally SKL/SPD/LCK+3 for one turn.&inspiringSong
+Voice of Peace&Enemies within two spaces inflict -2 damage with their physical attacks.&voiceOfPeace
+Foreign Princess&Foreign army units within two spaces take -2/+2 to dmage dealt/taken.&foreignPrincess
+Aptitude&Adds 10% to each stat's odds of increasing at level up.&aptitude
+Underdog&Hit/Avo +15 if foe's level is higher. (For adv. classes, add +20 to level).&underdog
+Nobility&Grants this unit a 20% bonus to EXP.&nobility
+Dragon Fang&Inflicts half of attack power as extra damage. Trigger % = (Skill stat x 0.75)&dragonFang
+Draconic Hex&After combat, reduce all of enemy's stats by 4 (recovers 1/turn).&draconicHex
+Nohrian Trust&this unit can use a supporting unit's triggered skills in combat.&nohrianTrust
+Elbow Room&This unit deals +3 damage when fighting in a space with no terrain effects.&elbowRoom
+Shelter&Grants use of the Shelter command. Use to pull another player unit into cover.&shelter
+Defender&Grants +1 to all stats when paired up as the lead unit.&defender
+Aegis&Halve bow/tome/dragonstone/breath/rock/shuriken damage. Trigger % = (Skill stat)&aegis
+Luna&Ignore half of enemy Def/Res when attacking. Trigger % = (Skill stat)&luna
+Armored Blow&Unit recieves -10 physical damage when the unit initiates an attack.&armoredBlow
+Defense +2&Defense +2&defensePlus2
+Natural Cover&This unit takes -3 damage when fighting in a space with a terrain effect.&naturalCover
+Wary Fighter&Neither this unit nor enemies in combat with him/her can use follow-up attacks.&waryFighter
+Pavise&Halve sword/lance/axe/beaststone/fist/saw damage. Trigger % = (Skill stat)&pavise
+HP +5&HP +5&hpPlus5
+Gamble&Causes Hit -10, but grants Crit +10.&gamble
+Rally Strength&Use "Rally" to grant STR+4 to units within two spaces for one turn.&rallyStrength
+Axefaire&+5 damage dealt if using an Axe/Club.&axefaire
+Good Fortune&Restores up to 20% HP at the start of each turn. Trigger % = (Lck stat)&goodFortune
+Strong Riposte&This unit deals +3 damage when counterattacking.&strongRiposte
+Sol&Absorb HP equal to half of damage dealt. Trigger % = (Skill stat)&sol
+Axebreaker&Grants Hit/Avo +50 if the enemy is using an axe/club.&axebreaker
+Rally Skill&Use "Rally" to grant Skill+4 to units within two spaces for one turn.&rallySkill
+Shurikenbreaker&Grants Hit/Avo +50 if enemy is using a Shuriken/Dagger.&shurikenbreaker
+Movement +1&Grants Mov +1.&movementPlus1
+Lucky Seven&Grants Hit/Avo +20 for the first seven turns.&luckySeven
+Pass&Allows the unit to pass through spaces occupied by enemies.&pass
+Strength +2&Strength +2&strengthPlus2
+Lunge&Grants use of Lunge command. After attacking, switches position with target.&lunge
+Rally Defense&Use "Rally" to grant DEF+4 to units within 2 spaces for one turn.&rallyDefense
+Swordbreaker&Grants Hit/Avo +50 if the enemy is using a Sword/Katana.&swordbreaker
+Savage Blow&Foes within two spaces lose up to 20% HP after any combat this unit initiates.&savageBlow
+Trample&+5 damage dealt to nonmounted enemies.&trample
+Heartseeker&Adjacent enemies suffer -20 Avo.&heartseeker
+Malefic Aura&Enemies within 2 spaces recieve +2 damage from magical attacks.&maleficAura
+Vengeance&Add half accrued damage to attacks. Trigger % = (Skill stat x 1.5)&vengeance
+Bowbreaker&Grants Hit/Avo +50 if enemy is using a Bow/Yumi.&bowbreaker
+Seal Magic&After combat, reduces enemy Mag by 6 (recovers 1/turn).&sealMagic
+Lifetaker&Restores up to 50% HP if this unit initiates an attack and defeats the enemy.&lifetaker
+Resistance +2&Resistance +2&resistancePlus2
+Gentilhomme&Female allies within two spaces receive -2 damage in combat.&gentilhomme
+Demoiselle&Male allies within two spaces receive -2 damage in combat.&demoiselle
+Rally Resistance&Use "Rally" to grant RES+4 to units within 2 spaces for one turn.&rallyResistance
+Inspiration&Allies within 2 spaces get +2 to damage dealt and -2 to damage received.&inspiration
+Live to Serve&When healing an ally with a staff, this unit recovers the same amount of HP.&liveToServe
+Tomebreaker&Grants Hit/Avo +50 if the enemy is using a Tome/Scroll.&tomebreaker
+Odd Shaped&This unit deals +4 damage on odd-numbered turns.&oddShaped
+Better Odds&Recover 40% of user's HP at the start of odd-numbered turns.&betterOdds
