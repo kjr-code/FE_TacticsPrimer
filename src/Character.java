@@ -56,8 +56,11 @@ public class Character {
 
     //TODO: following 2 methods are extremely wet and need revision
     public void obtainClass(String whichClass){
-        availableClasses.add(DB.baseClasses.get(whichClass));
-        classStringArray.add(DB.baseClasses.get(whichClass).className);
+        //availableClasses.add(DB.baseClasses.get(whichClass));
+        availableClasses.add(DB.grabClass(whichClass));
+        //TODO AHAHAHAHAHAHAHAHAHAHAHA FOUND YOU YOU SON OF A BITCH
+        //classStringArray.add(DB.baseClasses.get(whichClass).className);
+        classStringArray.add(DB.grabClass(whichClass).className);
     }
 
     public void obtainPromotedClass(String whichClass){

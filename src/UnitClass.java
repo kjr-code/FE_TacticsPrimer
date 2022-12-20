@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class UnitClass {
     public String className;
     private String classDesc;
-    private int[] growthRates = new int[8];
+    //private int[] growthRates = new int[8];
     public Growths classGrowths;
     //this code represents the same data unnecessarily
 

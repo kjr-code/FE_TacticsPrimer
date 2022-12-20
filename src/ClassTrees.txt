@@ -10,7 +10,7 @@ Monk&Onmyoji&Great Master
 Sky Knight&Falcon Knight&Kinshi Knight
 Archer&Sniper&Kinshi Knight
 Kitsune&Nine-Tails
-Songstress
+Songstress&
 Cavalier&Paladin&Great Knight
 Knight&General&Great Knight
 Fighter&Berserker&Hero

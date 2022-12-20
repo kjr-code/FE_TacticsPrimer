@@ -49,7 +49,6 @@ public class DB {
                     parsedRates[i] = Integer.parseInt(growthRates[i]);
                 }
                 Growths newGrowths = new Growths(parsedRates);
-                //TODO: NEVER ASSIGNED THE GROWTHS TO THE CLASS
                 newClass.setGrowths(newGrowths);
                 promotedClasses.put(nameAndDesc[0], newClass);
             }
@@ -83,6 +82,26 @@ public class DB {
             }
             baseClassesFileScanner.close();
 
+            //TODO wet code is wet and needs to be dried
+            File specialClassesFile = new File(Constants.specialClassesFile);
+            Scanner specialClassesFileScanner = new Scanner(specialClassesFile);
+            while(specialClassesFileScanner.hasNextLine()){
+                String nextClass = specialClassesFileScanner.nextLine();
+                String[] split = nextClass.split("@");
+                String[] nameAndDesc = split[0].split("&");
+                String[] growthRates = split[1].split("&");
+                UnitClass thisSpecialClass = new UnitClass(nameAndDesc[0], nameAndDesc[1]);
+
+                int[] parsedRates = new int[8];
+                for(int i = 0; i < growthRates.length; i++){
+                    parsedRates[i] = Integer.parseInt(growthRates[i]);
+                }
+                Growths newGrowths = new Growths(parsedRates);
+                thisSpecialClass.setGrowths(newGrowths);
+                specialClasses.put(nameAndDesc[0], thisSpecialClass);
+            }
+            specialClassesFileScanner.close();
+
 
             //read in characters last so that all dependencies are already filled and we don't have to loop 
             //back through the char hashmap multiple times.
@@ -92,12 +111,10 @@ public class DB {
                 String nextChar = charFileScanner.nextLine();
                 String[] split = nextChar.split(",");
                 Character newChar = new Character(split);
-                //TODO: assign classes to this char, or do it later
                 characters.put(newChar.name, newChar);
             }
             charFileScanner.close();
 
-            //TODO: "do it later" solution almost certainly not the most efficient
             File classSetsFile = new File(Constants.classSetsFile);
             Scanner classSetsFileScanner = new Scanner(classSetsFile);
             while(classSetsFileScanner.hasNextLine()){
@@ -133,11 +150,7 @@ public class DB {
                 if(characters.get(fName) != null){
                     characters.get(fName).setMapSpriteFile(mFile);
                 }
-                //characters.get(fName).setMapSpriteFile(mFile);
             }
-
-            //loop through the portraits folder and the mapsprites folder and assign the appropriate images to their
-            //respective characters (int the charHash)
 
         }catch(Exception e){
             e.printStackTrace();

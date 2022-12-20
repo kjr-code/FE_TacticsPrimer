@@ -38,7 +38,7 @@ Kiragi&Archer&Spear Fighter
 Asugi&Ninja&Samurai
 Selkie&Kitsune&Diviner
 Hisame&Samurai&Oni Savage
-Mitama&Monk&Great Master
+Mitama&Monk&Apothecary
 Caeldori&Sky Knight&Samurai
 Rhajat&Diviner&Oni Savage
 Gunter&Cavalier&Mercenary&Wyvern Rider

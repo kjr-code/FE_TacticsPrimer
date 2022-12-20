@@ -4,8 +4,7 @@ public class Constants {
     public static String charNameAndGrowthsFile = "src/Fates.csv";
     public static String baseClassesFile = "src/BaseClasses.txt";
     public static String promotedClassesFile = "src/PromotedClasses.txt";
-    public static String specialClassesFile = "";
-    //TODO add the actual addresses here 
+    public static String specialClassesFile = "src/SpecialClasses.txt";
     public static String skillsFile = "src/SkillDescriptions.txt";
     public static String classSetsFile = "src/ClassSets.txt";
 

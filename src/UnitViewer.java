@@ -12,7 +12,7 @@ import javafx.scene.image.ImageView;
 
 public class UnitViewer implements Initializable{
     public Character displayedCharacter;
-    public UnitClass currentClass;
+    public UnitClass displayedClass;
 
     //public ListView<String> charSelectListView;
 
@@ -20,11 +20,6 @@ public class UnitViewer implements Initializable{
     @FXML private Label HPValue;
     @FXML private Label STRValue;
     @FXML private Label MAGValue;
-    //@FXML private Label SKLValue;
-    //@FXML private Label SPDValue;
-    //@FXML private Label LCKValue;
-    //@FXML private Label DEFValue;
-    //@FXML private Label RESValue;
     
     @FXML private ImageView portraitView;
     @FXML private ImageView mapSpriteView;
@@ -35,12 +30,12 @@ public class UnitViewer implements Initializable{
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
-        System.out.println("Calling initialize!");
+        //System.out.println("Calling initialize!");
         displayedCharacter = DB.characters.get("Xander");
+        UnitClass initialClass = displayedCharacter.availableClasses.get(0);
+        displayedClass = initialClass;
         setDisplayCharacter(displayedCharacter);
-        //thisUnitsClasses.setOnAction(this::updateClass);
         thisUnitsClasses.setOnAction(e -> changeCurrentClass(DB.grabClass(thisUnitsClasses.getValue())));
-        //bruh
     }
 
     public void setDisplayCharacter(Character whichCharacter){
@@ -53,18 +48,20 @@ public class UnitViewer implements Initializable{
         nameLabel.setText(whichCharacter.name);
 
 
+
         //TODO: probably turn this into a for each loop, which will eliminate the need for the "classStringArray"
         //TODO: or, potentially even better, write a static method that takes in an arraylist of classes as input
         //TODO: and adds the String returned by "getName" into a seperate observable list
         thisUnitsClasses.getItems().addAll(whichCharacter.classStringArray);
-        currentClass = whichCharacter.availableClasses.get(0);
-        thisUnitsClasses.getSelectionModel().select(currentClass.className);
-        changeCurrentClass(currentClass);
+        displayedClass = whichCharacter.availableClasses.get(0);
+        //nullpointerexception found here, something to do with current class.classname being null
+        thisUnitsClasses.getSelectionModel().select(displayedClass.className);
+        changeCurrentClass(displayedClass);
     }
 
     public void changeCurrentClass(UnitClass newClass){
         //TODO: change displayed skills
-        currentClass = newClass;
+        displayedClass = newClass;
         int displayedHP = displayedCharacter.growths.HPGrowth + newClass.getGrowths().HPGrowth;
         int displayedSTR = displayedCharacter.growths.STRGrowth + newClass.getGrowths().STRGrowth;
         int displayedMAG = displayedCharacter.growths.MAGGrowth + newClass.getGrowths().MAGGrowth;
@@ -72,7 +69,7 @@ public class UnitViewer implements Initializable{
         HPValue.setText(""+displayedHP);
         STRValue.setText(""+displayedSTR);
         MAGValue.setText(""+displayedMAG);
-        thisUnitsClasses.getSelectionModel().select(currentClass.className);
+        thisUnitsClasses.getSelectionModel().select(displayedClass.className);
     }
 
     //TODO: figure out exactly how to merge this method with the above method
@@ -83,7 +80,6 @@ public class UnitViewer implements Initializable{
         String argClassName = thisUnitsClasses.getValue();
         UnitClass argClass = DB.grabClass(argClassName);
         if(argClass != null){
-            //System.out.println("Did I change the class? From "+prevValue+" to "+argClassName);
             changeCurrentClass(argClass);
         }
     }
