@@ -39,7 +39,7 @@ public class UnitViewer implements Initializable{
     }
 
     public void setDisplayCharacter(Character whichCharacter){
-        System.out.println("Now viewing: "+whichCharacter.name);
+        //System.out.println("Now viewing: "+whichCharacter.name);
         displayedCharacter = whichCharacter;
 
         //update character specific elements: name, portraits, class selection

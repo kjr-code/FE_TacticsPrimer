@@ -1,12 +1,15 @@
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.ImageView;
 
 public class SingleUnitView implements Initializable{
@@ -51,17 +54,22 @@ public class SingleUnitView implements Initializable{
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
-        //changeCharacterButton.setOnAction(null);
-        changeCharacter(DB.characters.get("Azura"));
+        System.out.println("SINGLEUNITVIEW init called");
+        changeCharacterButton.setOnAction(e -> pickNewCharacter());
+        setCharacter(DB.characters.get("Silas"));
         classChoiceBox.setOnAction(e -> changeClass(DB.grabClass(classChoiceBox.getValue())));
     }
 
-    public void changeCharacter(Character newCharacter){
+    public void setCharacter(Character newCharacter){
         displayedCharacter = newCharacter;
         charNameLabel.setText(displayedCharacter.name);
         portraitView.setImage(displayedCharacter.getPortrait());
         displayedAvailableClasses = displayedCharacter.availableClasses;
+
+        //TODO it only works without throwing a nullPointer exception when it's done specifically this way
+        //I do not yet understand why
         classChoiceBox.getItems().addAll(displayedCharacter.classStringArray);
+        classChoiceBox.getItems().setAll(FXCollections.observableArrayList(displayedCharacter.classStringArray));
         classChoiceBox.getSelectionModel().select(displayedCharacter.classStringArray.get(0));
 
         //set charGrowthText
@@ -74,7 +82,7 @@ public class SingleUnitView implements Initializable{
         charDEF.setText(""+displayedCharacter.growths.DEFGrowth);
         charRES.setText(""+displayedCharacter.growths.RESGrowth);
         //end set charGrowthText
-        
+
         UnitClass newClass = DB.grabClass(classChoiceBox.getValue());
         //TODO make a "classList" class that simplifies this bit of code here
         changeClass(newClass);
@@ -105,6 +113,18 @@ public class SingleUnitView implements Initializable{
         //update skills
         //update weapons
         classChoiceBox.getSelectionModel().select(newClass.className);
+    }
+
+    private void pickNewCharacter(){
+        TextInputDialog promptUser = new TextInputDialog();
+        promptUser.setTitle("FE Tactics Primer");
+        promptUser.setHeaderText("Display which character?");
+
+        Optional<String> result = promptUser.showAndWait();
+        if(result.isPresent()){
+            Character newChar = DB.characters.get(result.get());
+            setCharacter(newChar);
+        }
     }
     
 

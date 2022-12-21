@@ -158,7 +158,6 @@ public class DB {
     } //loadData
 
     public static UnitClass grabClass(String classToGrab){
-        //TODO: there's almost certainly some java shorthand for this
         if(baseClasses.containsKey(classToGrab)){
             return baseClasses.get(classToGrab);
         } else if(promotedClasses.containsKey(classToGrab)){
