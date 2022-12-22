@@ -122,17 +122,21 @@ public class DB {
                 String[] split = nextUnit.split("&");
                 Character myGuy = characters.get(split[0]);
                 //TODO: loop begins at index 1 b/c index 0 contains character's name in the classSetsFile
+                //TODO change this to make use of new "ClassGroups" attribute in character class
                 for(int i = 1; i < split.length; i++){
                     System.out.println("Adding class "+split[i]+" to character "+myGuy.name);
-                    //myGuy.acquireClass(split[i]);
                     if(baseClasses.get(split[i]) != null){
+                        //delLineBel
                         myGuy.obtainClass(split[i]);
-                        //TODO clean this up
+                        myGuy.classes.addClass(split[i]);
                         for(UnitClass promotedClass : baseClasses.get(split[i]).promotedClasses){
                             myGuy.obtainPromotedClass(promotedClass.className);
+                            myGuy.classes.addClass(promotedClass);
+                            //:D excellent.....
                         }
                     } else if(specialClasses.get(split[i]) != null){
                         myGuy.obtainClass(split[i]);
+                        myGuy.classes.addClass(split[i]);
                     } else {
                         System.out.println("WARNING: Could not locate "+split[i]+" class in either the base or special hashes");
                     }

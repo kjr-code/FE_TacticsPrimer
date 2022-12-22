@@ -22,15 +22,9 @@ public class Character {
     public Character[] buddies;
     //SWORDS,LANCES,AXES,DAGGERS,BOWS, TOMES, STAVES, STONES
 
-    //TODO: growth rates and stat spreads can be represented as a single "stats" object;
-    //TODO: context would determine whether the int[] was a stat Spread, set of growths, or set of bonuses
-    //TODO: this would eliminate the need for multiple different classes 
-    
     public Growths growths;
+    public ClassGroup classes;
 
-    //Char name and growths passed in as args, values retrieved from a String[]
-    //TODO: add format checking here, i.e. make sure the array passed in is the right size and type
-    //TODO: throw an exception if invalid type, for example
     public Character(String[] charData){
         this.name = charData[0];
         int[] growthData = new int[8];
@@ -38,10 +32,11 @@ public class Character {
             growthData[i-1] = Integer.parseInt(charData[i]);
         }
         growths = new Growths(growthData);
+        classes = new ClassGroup();
+        //TODO something about ClassGroup 
     }
 
     public Image getMapSprite(){
-        //TODO accessing the file tree every time is probably quite slow; this code can/should live somewhere else
         //String temp = "Images/MapSpritesFixed/" + DataGrabber.mapSpritesHash.get(this.name).getName();
         String temp = "Images/MapSpritesFixed/"+this.name+".png";
         Image cap = new Image(temp);
@@ -54,12 +49,8 @@ public class Character {
         classStringArray.add(DataGrabber.classHash.get(whichClass).className);
     }
 
-    //TODO: following 2 methods are extremely wet and need revision
     public void obtainClass(String whichClass){
-        //availableClasses.add(DB.baseClasses.get(whichClass));
         availableClasses.add(DB.grabClass(whichClass));
-        //TODO AHAHAHAHAHAHAHAHAHAHAHA FOUND YOU YOU SON OF A BITCH
-        //classStringArray.add(DB.baseClasses.get(whichClass).className);
         classStringArray.add(DB.grabClass(whichClass).className);
     }
 

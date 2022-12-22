@@ -2,6 +2,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import java.io.File;
 
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
@@ -10,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextInputDialog;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class SingleUnitView implements Initializable{
@@ -115,10 +117,19 @@ public class SingleUnitView implements Initializable{
         classChoiceBox.getSelectionModel().select(newClass.className);
     }
 
+    //TODO: error is thrown when the new character has the same base class as the current one
+    //TODO: code says it's a null ptr error and that it can't grab the "null" class from any of the hashes
+    //TODO: this does not happen when swapping to a unit with different classes.
     private void pickNewCharacter(){
         TextInputDialog promptUser = new TextInputDialog();
         promptUser.setTitle("FE Tactics Primer");
         promptUser.setHeaderText("Display which character?");
+        //promptUser.setGraphic(new ImageView(new Image("src/Images/Portraits/AnnaTrickster.png")));
+        ImageView iconView = new ImageView();
+        iconView.setImage(new Image("Images/Portraits/AnnaTrickster.png"));
+        iconView.setFitHeight(100);
+        iconView.setPreserveRatio(true);
+        promptUser.setGraphic(iconView);
 
         Optional<String> result = promptUser.showAndWait();
         if(result.isPresent()){
