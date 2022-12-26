@@ -168,8 +168,10 @@ public class DB {
             return promotedClasses.get(classToGrab);
         } else if(specialClasses.containsKey(classToGrab)){
             return specialClasses.get(classToGrab);
+        } else if(classToGrab == null){
+            //System.out.println("WARNING! Cannot grab "+classToGrab+" class from any of the hashes!");
+            return null;
         } else {
-            System.out.println("WARNING! Cannot grab "+classToGrab+" class from any of the hashes!");
             return null;
         }
     }

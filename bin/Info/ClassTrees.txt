@@ -1,0 +1,22 @@
+Nohr Prince&Hoshido Noble&Nohr Noble
+Samurai&Swordmaster&Master of Arms
+Villager&Merchant&Master of Arms
+Apothecary&Merchant&Mechanist
+Ninja&Mechanist&Master Ninja
+Oni Savage&Oni Chieftan&Blacksmith
+Spear Fighter&Basara&Spear Master
+Diviner&Basara&Onmyoji
+Monk&Onmyoji&Great Master
+Sky Knight&Falcon Knight&Kinshi Knight
+Archer&Sniper&Kinshi Knight
+Kitsune&Nine-Tails
+Songstress&
+Cavalier&Paladin&Great Knight
+Knight&General&Great Knight
+Fighter&Berserker&Hero
+Mercenary&Hero&Bow Knight
+Outlaw&Bow Knight&Adventurer
+Wyvern Rider&Wyvern Lord&Malig Knight
+Dark Mage&Sorcerer&Dark Knight
+Troubadour&Strategist&Butler
+Wolfskin&Wolfssegner

@@ -78,8 +78,22 @@ public class Character {
         //return portrait;
     }
 
-    public void setMapSpriteFile(File aFile){
+    public ArrayList<Skill> getPossibleSkills(){
+        ArrayList<Skill> possibleSkills = new ArrayList<Skill>();
+        for(UnitClass thisClass : classes.getList()){
+            for(Skill thisSkill : thisClass.classSkills){
+                possibleSkills.add(thisSkill);
+            }
+        }
+        return possibleSkills;
+        //TODO: you're going to need a skillsgroup class as well, that populates the list based on the params
+        //in the displayed character. 
 
+        //will need to add friendship/partner support pairings first before implementing this (to prevent more work later)
+    }
+
+    public void setMapSpriteFile(File aFile){
+        //TODO: figure out why the program breaks without the existence of this literally empty method
     }
       
 }

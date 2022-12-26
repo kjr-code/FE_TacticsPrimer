@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -19,11 +20,13 @@ public class SingleUnitView implements Initializable{
     private Character displayedCharacter;
     private UnitClass displayedClass;
     private ArrayList<UnitClass> displayedAvailableClasses;
+    private ArrayList<Skill> displayedAvailableSkills;
     //underlying model
 
     @FXML private Label charNameLabel;
     @FXML private ImageView portraitView;
     @FXML private ChoiceBox<String> classChoiceBox;
+    @FXML private ListView<String> skillsListView;
 
     @FXML private Label charHP;
     @FXML private Label charSTR;
@@ -56,13 +59,16 @@ public class SingleUnitView implements Initializable{
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
-        System.out.println("SINGLEUNITVIEW init called");
         changeCharacterButton.setOnAction(e -> pickNewCharacter());
         setCharacter(DB.characters.get("Silas"));
         classChoiceBox.setOnAction(e -> changeClass(DB.grabClass(classChoiceBox.getValue())));
     }
 
     public void setCharacter(Character newCharacter){
+        if(displayedCharacter != null){
+            Character oldChar = displayedCharacter;
+            classChoiceBox.getItems().removeAll(oldChar.classStringArray);
+        }
         displayedCharacter = newCharacter;
         charNameLabel.setText(displayedCharacter.name);
         portraitView.setImage(displayedCharacter.getPortrait());
@@ -71,7 +77,7 @@ public class SingleUnitView implements Initializable{
         //TODO it only works without throwing a nullPointer exception when it's done specifically this way
         //I do not yet understand why
         classChoiceBox.getItems().addAll(displayedCharacter.classStringArray);
-        classChoiceBox.getItems().setAll(FXCollections.observableArrayList(displayedCharacter.classStringArray));
+        //classChoiceBox.getItems().setAll(FXCollections.observableArrayList(displayedCharacter.classStringArray));
         classChoiceBox.getSelectionModel().select(displayedCharacter.classStringArray.get(0));
 
         //set charGrowthText
@@ -85,12 +91,17 @@ public class SingleUnitView implements Initializable{
         charRES.setText(""+displayedCharacter.growths.RESGrowth);
         //end set charGrowthText
 
+        //TODO use your "ClassGroup" class to simplify this code
+        updateSkillsView();
         UnitClass newClass = DB.grabClass(classChoiceBox.getValue());
-        //TODO make a "classList" class that simplifies this bit of code here
         changeClass(newClass);
     }
 
     public void changeClass(UnitClass newClass){
+        if(newClass == null){
+            return;
+            //TODO hooooo buddy this solution feels extremely sketchy and may come back to bite you later
+        }
         displayedClass = newClass;
         //TODO dry code is dry and bad
         classHP.setText(""+newClass.getGrowths().HPGrowth);
@@ -111,7 +122,6 @@ public class SingleUnitView implements Initializable{
         effLCK.setText(""+(displayedCharacter.growths.LCKGrowth + newClass.getGrowths().LCKGrowth));
         effDEF.setText(""+(displayedCharacter.growths.DEFGrowth + newClass.getGrowths().DEFGrowth));
         effRES.setText(""+(displayedCharacter.growths.RESGrowth + newClass.getGrowths().RESGrowth));
-            //TODO: "updating growths" may end up in a method of its own
         //update skills
         //update weapons
         classChoiceBox.getSelectionModel().select(newClass.className);
@@ -124,7 +134,6 @@ public class SingleUnitView implements Initializable{
         TextInputDialog promptUser = new TextInputDialog();
         promptUser.setTitle("FE Tactics Primer");
         promptUser.setHeaderText("Display which character?");
-        //promptUser.setGraphic(new ImageView(new Image("src/Images/Portraits/AnnaTrickster.png")));
         ImageView iconView = new ImageView();
         iconView.setImage(new Image("Images/Portraits/AnnaTrickster.png"));
         iconView.setFitHeight(100);
@@ -136,6 +145,19 @@ public class SingleUnitView implements Initializable{
             Character newChar = DB.characters.get(result.get());
             setCharacter(newChar);
         }
+    }
+
+    private void updateSkillsView(){
+        //TODO "skillNames" will likely be replaced with an arraylist of custom "Skill" controls
+        //once you learn how to do that
+        displayedAvailableSkills = displayedCharacter.getPossibleSkills();
+        System.out.println("Am I even running?");
+        ArrayList<String> skillNames = new ArrayList<String>();
+        for(Skill thisSkill : displayedAvailableSkills){
+            skillNames.add(thisSkill.getName());
+            System.out.println("Adding available skill: "+thisSkill.getName());
+        }
+        skillsListView.getItems().addAll(skillNames);
     }
     
 

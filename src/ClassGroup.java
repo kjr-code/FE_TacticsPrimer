@@ -23,4 +23,8 @@ public class ClassGroup {
     public void addClass(String whichClass){
         classesInternal.add(DB.grabClass(whichClass));
     }
+
+    public ArrayList<UnitClass> getList(){
+        return classesInternal;
+    }
 }

@@ -1,0 +1,71 @@
+Corrin(Male)&Nohr Prince(ss)
+Corrin(Female)&Nohr Prince(ss)
+Felicia&Troubadour&Mercenary
+Jakob&Troubadour&Cavalier
+Kaze&Ninja&Samurai
+Azura&Songstress&Sky Knight
+Silas&Cavalier&Mercenary
+Shura&Outlaw&Ninja
+Izana&Monk&Samurai&Apothecary
+Mozu&Villager&Archer
+Rinkah&Oni Savage&Ninja
+Sakura&Monk&Sky Knight
+Hana&Samurai&Monk
+Subaki&Sky Knight&Samurai
+Saizo&Ninja&Samurai
+Orochi&Diviner&Apothecary
+Hinoka&Sky Knight&Spear Fighter
+Azama&Monk&Apothecary
+Setsuna&Archer&Ninja
+Hayato&Diviner&Oni Savage
+Oboro&Spear Fighter&Apothecary
+Hinata&Samurai&Oni Savage
+Takumi&Archer&Spear Fighter
+Kagero&Ninja&Diviner
+Reina&Sky Knight&Diviner&Ninja
+Kaden&Kitsune&Diviner
+Ryoma&Samurai&Sky Knight
+Scarlet&Wyvern Rider&Outlaw
+Yukimura&Apothecary&Samurai&Monk
+Kana(Male)&Nohr Prince(ss)
+Kana(Female)&Nohr Prince(ss)
+Shigure&Sky Knight&Troubadour
+Dwyer&Troubadour&Cavalier
+Sophie&Cavalier&Mercenary
+Midori&Apothecary&Ninja
+Shiro&Spear Fighter&Samurai
+Kiragi&Archer&Spear Fighter
+Asugi&Ninja&Samurai
+Selkie&Kitsune&Diviner
+Hisame&Samurai&Oni Savage
+Mitama&Monk&Apothecary
+Caeldori&Sky Knight&Samurai
+Rhajat&Diviner&Oni Savage
+Gunter&Cavalier&Mercenary&Wyvern Rider
+Elise&Troubadour&Wyvern Rider
+Arthur&Fighter&Cavalier
+Effie&Knight&Troubadour
+Odin&Dark Mage&Samurai
+Niles&Outlaw&Dark Mage
+Nyx&Dark Mage&Outlaw
+Camilla&Wyvern Rider&Dark Mage
+Selena&Mercenary&Sky Knight
+Beruka&Wyvern Rider&Fighter
+Laslow&Mercenary&Ninja
+Peri&Cavalier&Dark Mage
+Benny&Knight&Fighter
+Charlotte&Fighter&Troubadour
+Leo&Dark Mage&Troubadour
+Keaton&Wolfskin&Fighter
+Xander&Cavalier&Wyvern Rider
+Flora&Troubadour&Dark Mage&Mercenary
+Siegbert&Cavalier&Wyvern Rider
+Forrest&Troubadour&Dark Mage
+Ignatius&Knight&Fighter
+Velouria&Wolfskin&Fighter
+Percy&Wyvern Rider&Fighter
+Ophelia&Dark Mage&Samurai
+Soleil&Mercenary&Ninja
+Nina&Outlaw&Dark Mage
+Fuga&Samurai&Oni Savage&Monk
+Anna&Outlaw&Apothecary&Troubadour

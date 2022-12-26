@@ -1,0 +1,22 @@
+Nohr Prince(ss)&A prince(ss) of Nohr. Their blood pulses with the power of the dragons.@15&15&10&10&10&10&10&5@Hoshido Noble&Nohr Noble
+Samurai&A warrior striving to master the katana. Benefits from high Spd.@10&10&0&15&20&15&0&10@Swordmaster&Master of Arms
+Villager&Ordinary rural citizen who uses naginata when forced to fight.@10&10&0&10&10&20&10&0@Merchant&Master of Arms
+Apothecary&An expert in potions and salves. Uses a yumi for self-defense.@20&20&0&10&10&5&10&5@Merchant&Mechanist
+Ninja&A shuriken wielder who strikes from the shadows.@5&5&0&20&20&0&5&15@Master Ninja&Mechanist
+Oni Savage&A club wielder who fights like a demon. Has high Str and Def.@20&20&10&0&10&0&20&0@Oni Chieftan&Blacksmith
+Spear Fighter&A soldier trained in the naginata. They have high Def.@15&15&0&15&15&5&10&5@Spear Master&Basara
+Diviner&A skilled practitioner of spirit magic. Uses scrolls in battle.@0&5&15&10&15&5&0&10@Basara&Onmyoji
+Monk&An ascetic who strives toward enlightenment. Uses rods.@0&5&10&10&15&15&0&20@Onmyoji&Great Master
+Shrine Maiden&A holy woman who uses rods to heal her allies.@0&5&10&10&15&15&0&20@Onmyoji&Priestess
+Sky Knight&A warrior who flies atop a pegasus. Excels in Spd and Def.@0&10&0&10&15&20&0&20@Falcon Knight&Kinshi Knight
+Archer&A soldier who uses a yumi, a type of bow. They have high Skill.@10&15&0&15&15&5&10&0@Sniper&Kinshi Knight
+Kitsune&A shape-shifter with a long lifespan. They have high Spd and Res.@10&10&0&15&20&10&0&20@Nine-Tails
+Cavalier&A knight who fights on horseback. Wields swords and lances.@10&15&0&10&10&15&10&5@Paladin&Great Knight
+Knight&A heavily armored knight. Moves slowly, but has high Def.@20&20&0&15&5&10&20&0@General&Great Knight
+Fighter&A soldier trained in axe fighting. High HP, but low Def.@20&20&0&15&15&5&5&0@Berserker&Hero
+Mercenary&A soldier whose main loyalty is to gold. Their stats are balanced, with high Skill.@10&15&0&20&15&5&10&5@Hero&Bow Knight
+Outlaw&A rogue able to pick any lock. Uses bows and has high Spd and Res.@0&10&5&10&20&0&0&20@Adventurer&Bow Knight
+Wyvern Rider&A cavalry rider who rides a wyvern. Has high Str and Def.@10&15&5&10&10&5&20&0@Wyvern Lord&Malig Knight
+Dark Mage&A wizard who practices the forbidden techniques of dark magic.@0&10&20&0&10&0&5&10@Sorcerer&Dark Knight
+Troubadour&A healer mounted on a horse for battlefield mobility. Uses staves.@0&0&10&20&10&15&0&15@Strategist&Butler
+Wolfskin&A human/beast hybrid said to feed on humans. High Str and Spd.@20&20&0&5&15&5&10&0@Wolfssegner
