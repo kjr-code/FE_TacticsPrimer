@@ -1,33 +1,33 @@
-Nohr Noble&A member of the Nohr royal family. Uses swords, tomes, and dragonstones.@15&10&15&5&15&5&5&15
-Paladin&A brave, honarable knight. More experienced than a cavalier.@10&15&0&10&10&15&10&10
-Great Knight&An armored, mounted knight. Wields swords, lances, and axes.@20&20&0&10&5&5&20&0
-General&A seasoned, armored commander of troops. Exceptional Def.@25&20&0&15&0&10&20&5
-Berserker&A seasoned fighter. Great at getting in critical hits.@30&25&0&15&15&0&0&0
-Hero&A soldier with a record of bravery. Wields swords and axes.@20&15&0&20&15&5&10&0
-Bow Knight&An archer trained to shoot from horseback. Also wields swords.@10&10&0&15&15&10&0&10
-Adventurer&A skilled treasure seeker. Wields bows and staves in the field.@0&5&15&5&20&0&0&20
-Wyvern Lord&A mighty knight mounted on a wyvern. Uses axes and lances.@10&15&0&15&10&5&20&0
-Malig Knight&A tamer of evil dragons. Crushes foes with axes and tomes.@0&15&15&10&5&0&10&15
-Sorcerer&A mage who delves deeply into dark lore. Their Mag is fearsome.@0&0&25&0&10&0&5&15
-Dark Knight&An eldritch knight trained in both swordsmanship and magic.@15&20&10&5&5&5&15&5
-Strategist&A planner who directs battles atop a horse. Uses tomes and staves.@0&0&15&5&10&20&0&15
-Butler&A servant who defends his master with shuriken and staves.@0&10&10&15&15&10&5&10
-Maid&A servant who defends her master with shuriken and staves.@0&10&10&15&15&10&5&10
-Wolfssegner&A mighty wolfskin who surpasses peers in skill and savagery.@20&20&0&5&15&5&10&0
-Hoshido Noble&A scion of Hoshido royalty. Uses katana, rods, and dragonstones.@15&15&10&10&10&10&15&0
-Swordmaster&A master of the way of the katana. Has exceptional Spd and Avo.@10&10&5&15&20&15&0&10
-Master of Arms&A versatile warrior who uses katana, naginata, and clubs.@20&15&0&10&10&10&10&0
-Merchant&A trader who protects investments with yumi and naginata.@20&20&0&10&5&15&10&5
-Mechanist&A puppet maker skilled in the use of shuriken and yumi.@10&10&0&15&10&5&5&15
-Master Ninja&A ninja who trains others. Uses shuriken and katana on missions.@5&5&0&20&20&0&5&20
-Oni Chieftan&A savage warrior who fights ferociously with clubs and scrolls.@10&20&15&0&10&0&20&5
-Blacksmith&An artisan with great Skill. They wield katana and clubs.@20&15&0&15&10&5&15&0
-Spear Master&A soldier who has mastered the naginata. Their stats are balanced.@15&15&0&15&15&5&10&5
-Basara&A freewheeling warrior who uses naginata and scrolls.@20&10&10&10&10&15&5&10
-Onmyoji&A powerful spirit caller. Uses scrolls and rods.@0&0&20&10&15&0&0&15
-Great Master&An enlightened monk who uses both rods and naginata.@10&15&5&5&15&15&10&10
-Priestess&A skilled shrine maiden who wields the yumi as well as the rod.@10&10&10&5&15&15&0&20
-Falcon Knight&A skilled pegasus rider trained in naginata and rods.@0&10&10&15&20&0&20
-Kinshi Knight&A naginata and yumi wielder riding a great bird called a Kinshi.@0&5&0&15&15&15&0&15
-Sniper&A master of the yumi. They have high Hit and Crit rates.@10&15&0&20&15&5&10&0
-Nine-Tails&An eminent kitsune with a powerful spirit. Wise and learned.@10&10&0&15&20&10&0&20
+Nohr Noble&A member of the Nohr royal family. Uses swords, tomes, and dragonstones.@15&10&15&5&15&5&5&15@Draconic Hex&Nohrian Trust
+Paladin&A brave, honarable knight. More experienced than a cavalier.@10&15&0&10&10&15&10&10@Defender&Aegis
+Great Knight&An armored, mounted knight. Wields swords, lances, and axes.@20&20&0&10&5&5&20&0@Luna&Armored Blow
+General&A seasoned, armored commander of troops. Exceptional Def.@25&20&0&15&0&10&20&5@Wary Fighter&Pavise
+Berserker&A seasoned fighter. Great at getting in critical hits.@30&25&0&15&15&0&0&0@Rally Strength&Axefaire
+Hero&A soldier with a record of bravery. Wields swords and axes.@20&15&0&20&15&5&10&0@Sol&Axebreaker
+Bow Knight&An archer trained to shoot from horseback. Also wields swords.@10&10&0&15&15&10&0&10@Rally Skill&Shurikenbreaker
+Adventurer&A skilled treasure seeker. Wields bows and staves in the field.@0&5&15&5&20&0&0&20@Lucky Seven&Pass
+Wyvern Lord&A mighty knight mounted on a wyvern. Uses axes and lances.@10&15&0&15&10&5&20&0@Rally Defense&Swordbreaker
+Malig Knight&A tamer of evil dragons. Crushes foes with axes and tomes.@0&15&15&10&5&0&10&15@Savage Blow&Trample
+Sorcerer&A mage who delves deeply into dark lore. Their Mag is fearsome.@0&0&25&0&10&0&5&15@Vengeance&Bowbreaker
+Dark Knight&An eldritch knight trained in both swordsmanship and magic.@15&20&10&5&5&5&15&5@Seal Magic&Lifetaker
+Strategist&A planner who directs battles atop a horse. Uses tomes and staves.@0&0&15&5&10&20&0&15@Rally Resistance&Inspiration
+Butler&A servant who defends his master with shuriken and staves.@0&10&10&15&15&10&5&10@Gentilhomme&Tomebreaker
+Maid&A servant who defends her master with shuriken and staves.@0&10&10&15&15&10&5&10@Demoiselle&Tomebreaker
+Wolfssegner&A mighty wolfskin who surpasses peers in skill and savagery.@20&20&0&5&15&5&10&0@Better Odds&Grisly Wound
+Hoshido Noble&A scion of Hoshido royalty. Uses katana, rods, and dragonstones.@15&15&10&10&10&10&15&0@Dragon Ward&Hoshidan Unity
+Swordmaster&A master of the way of the katana. Has exceptional Spd and Avo.@10&10&5&15&20&15&0&10@Astra&Swordfaire
+Master of Arms&A versatile warrior who uses katana, naginata, and clubs.@20&15&0&10&10&10&10&0@Seal Strength&Life and Death
+Merchant&A trader who protects investments with yumi and naginata.@20&20&0&10&5&15&10&5@Profiteer&Spendthrift
+Mechanist&A puppet maker skilled in the use of shuriken and yumi.@10&10&0&15&10&5&5&15@Golembane&Replicate
+Master Ninja&A ninja who trains others. Uses shuriken and katana on missions.@5&5&0&20&20&0&5&20@Lethality&Shurikenfaire
+Oni Chieftan&A savage warrior who fights ferociously with clubs and scrolls.@10&20&15&0&10&0&20&5@Death Blow&Counter
+Blacksmith&An artisan with great Skill. They wield katana and clubs.@20&15&0&15&10&5&15&0@Salvage Blow&Lancebreaker
+Spear Master&A soldier who has mastered the naginata. Their stats are balanced.@15&15&0&15&15&5&10&5@Seal Speed&Lancefaire
+Basara&A freewheeling warrior who uses naginata and scrolls.@20&10&10&10&10&15&5&10@Rend Heaven&Quixotic
+Onmyoji&A powerful spirit caller. Uses scrolls and rods.@0&0&20&10&15&0&0&15@Rally Magic&Tomefaire
+Great Master&An enlightened monk who uses both rods and naginata.@10&15&5&5&15&15&10&10@Renewal&Countermagic
+Priestess&A skilled shrine maiden who wields the yumi as well as the rod.@10&10&10&5&15&15&0&20@Renewal&Countermagic
+Falcon Knight&A skilled pegasus rider trained in naginata and rods.@0&10&10&15&20&0&20@Rally Speed&Warding Blow
+Kinshi Knight&A naginata and yumi wielder riding a great bird called a Kinshi.@0&5&0&15&15&15&0&15@Air Superiority&Amaterasu
+Sniper&A master of the yumi. They have high Hit and Crit rates.@10&15&0&20&15&5&10&0@Certain Blow&Bowfaire
+Nine-Tails&An eminent kitsune with a powerful spirit. Wise and learned.@10&10&0&15&20&10&0&20@Even Better&Grisly Wound

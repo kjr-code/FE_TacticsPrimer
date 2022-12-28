@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 import java.io.File;
 
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -91,10 +92,10 @@ public class SingleUnitView implements Initializable{
         charRES.setText(""+displayedCharacter.growths.RESGrowth);
         //end set charGrowthText
 
-        //TODO use your "ClassGroup" class to simplify this code
-        updateSkillsView();
+        //updateSkillsView();
         UnitClass newClass = DB.grabClass(classChoiceBox.getValue());
         changeClass(newClass);
+        updateSkillsView();
     }
 
     public void changeClass(UnitClass newClass){
@@ -148,16 +149,24 @@ public class SingleUnitView implements Initializable{
     }
 
     private void updateSkillsView(){
-        //TODO "skillNames" will likely be replaced with an arraylist of custom "Skill" controls
-        //once you learn how to do that
-        displayedAvailableSkills = displayedCharacter.getPossibleSkills();
-        System.out.println("Am I even running?");
+        System.out.println("Updating Skills view!");
+        System.out.println("Viewing unit "+displayedCharacter.name);
+        displayedAvailableSkills = displayedCharacter.getPossibleSkills(true);
+        System.out.println("Should have created an 'available skills' ArrayList of size "+displayedCharacter.getPossibleSkills(true).size());
+        System.out.println("ArrayList created has size: "+displayedAvailableSkills.size());
+        //TODO: getPossibleSkills uses the "classes" object which you haven't actually assigned to any players
+
+        System.out.println("First skill: "+displayedAvailableSkills.get(0).getName());
+
+        
         ArrayList<String> skillNames = new ArrayList<String>();
         for(Skill thisSkill : displayedAvailableSkills){
-            skillNames.add(thisSkill.getName());
-            System.out.println("Adding available skill: "+thisSkill.getName());
+            String name = thisSkill.getName();
+            skillNames.add(name);
+            System.out.println("Adding available skill: "+name);
         }
-        skillsListView.getItems().addAll(skillNames);
+        ObservableList<String> stuff = FXCollections.observableArrayList(skillNames);
+        skillsListView.setItems(stuff);
     }
     
 

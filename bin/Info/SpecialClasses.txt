@@ -1,9 +1,9 @@
-Songstress&A singer whose mystical voice soothes hearts and grants allies an extra turn.@0&10&0&20&20&20&0&0
-Dread Fighter&An elite Hoshidan warrior trained in Katana, Clubs, and Shuriken.@15&15&5&5&15&0&5&20
-Dark Falcon&An elite Nohrian pegasus rider trained to use tomes and lances in the air.@0&10&15&5&15&15&0&20
-Ballistician&An otherworldly artillerist. Uses movable cannons to attack at range.@5&25&0&15&0&10&5&5
-Witch&An otherworldly arcanist. Uses tomes and can warp over long distances.@5&0&25&5&20&5&0&10
-Lodestar&An otherworldly class. Tales about of this great hero-king. Uses swords.@15&10&0&20&10&25&5&5
-Vanguard&An otherworldly class. The leader of a band of heroes. Uses swords and axes.@20&20&0&5&5&10&15&0
-Grandmaster&An otherworldly class. A natural leader and tactician. Uses swords and tomes.@10&15&15&15&5&0&5&15
-Great Lord&An otherworldly class. A time-lost but heroic royal. Uses swords and lances.@15&15&0&10&10&15&10&5
+Songstress&A singer whose mystical voice soothes hearts and grants allies an extra turn.@0&10&0&20&20&20&0&0@Luck +4&Inspiring Song&Voice of Peace&Foreign Princess
+Dread Fighter&An elite Hoshidan warrior trained in Katana, Clubs, and Shuriken.@15&15&5&5&15&0&5&20@Even Keel&Iron Will&Clarity&Aggressor
+Dark Falcon&An elite Nohrian pegasus rider trained to use tomes and lances in the air.@0&10&15&5&15&15&0&20@Speed +2&Relief&Rally Movement&Galeforce
+Ballistician&An otherworldly artillerist. Uses movable cannons to attack at range.@5&25&0&15&0&10&5&5@Survey&Opportunity Shot&Rifled Barrel&Surefooted
+Witch&An otherworldly arcanist. Uses tomes and can warp over long distances.@5&0&25&5&20&5&0&10@Shadowgift&Witch's Brew&Warp&Toxic Brew
+Lodestar&An otherworldly class. Tales about of this great hero-king. Uses swords.@15&10&0&20&10&25&5&5@Dancing Blade&Charm&Dual Guardsman&Speedtaker
+Vanguard&An otherworldly class. The leader of a band of heroes. Uses swords and axes.@20&20&0&5&5&10&15&0@Heavy Blade&Veteran Intuition&Aether&Strengthtaker
+Grandmaster&An otherworldly class. A natural leader and tactician. Uses swords and tomes.@10&15&15&15&5&0&5&15@Tactical Advice&Solidarity&Ignis&Rally Spectrum
+Great Lord&An otherworldly class. A time-lost but heroic royal. Uses swords and lances.@15&15&0&10&10&15&10&5@Dual Striker&Awakening&Charm&Aether

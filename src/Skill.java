@@ -6,8 +6,6 @@ public class Skill {
     private String desc;
     public Image icon;
 
-    //TODO skills don't have to point back to the class they're from (at least not now)
-
     public Skill(String _name, String _desc){
         name = _name;
         desc = _desc;

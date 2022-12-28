@@ -17,7 +17,7 @@ public class UnitClass {
         classSkills.add(skillName);
     }
 
-    //TODO potentially unnecessary method here
+    // //TODO potentially unnecessary method here
     public Growths getGrowths(){
         return classGrowths;
     }

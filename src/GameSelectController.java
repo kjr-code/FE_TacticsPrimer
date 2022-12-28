@@ -50,29 +50,14 @@ public class GameSelectController implements Initializable {
     }
 
     public void makeSelection(ActionEvent event) throws IOException{
-        //String selectedGame = gameBox.getValue();
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("Controllers/unitDataCard.fxml"));
-        //FXMLLoader loader2 = new FXMLLoader(getClass().getResource("Controllers/jankee.fxml"));
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("Controllers/singleUnitView.fxml"));
-        //mRoot = loader.load();
-        //mRoot2 = loader2.load();
         mRoot3 = loader3.load();
-        //UnitDataCardController nextSceneController = loader.getController();
-        //UnitViewer nextSceneCont = loader2.getController();
-        SingleUnitView nextScene3 = loader3.getController();
-        //TODO: start changes tuesday here
-        //DataGrabber.getData();
-        //nextSceneController.setDefaultCharacter("Hana");
-
-        //nextSceneCont.setDisplayCharacter(DB.characters.get("Xander"));
+        //SingleUnitView nextScene3 = loader3.getController();
 
         mStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        //mScene = new Scene(mRoot);
-        //mScene = new Scene(mRoot2);
         mScene = new Scene(mRoot3);
         mStage.setScene(mScene);
         mStage.show();
         mStage.centerOnScreen();
-        //communicate between scenes, set the default char
     }
 }

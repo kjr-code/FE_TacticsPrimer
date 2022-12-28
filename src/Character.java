@@ -2,7 +2,6 @@ import java.io.File;
 import java.net.URL;
 import java.nio.channels.DatagramChannel;
 import java.util.ArrayList;
-//gross
 import javafx.scene.image.Image;
 
 public class Character {
@@ -32,12 +31,10 @@ public class Character {
             growthData[i-1] = Integer.parseInt(charData[i]);
         }
         growths = new Growths(growthData);
-        classes = new ClassGroup();
-        //TODO something about ClassGroup 
+        classes = new ClassGroup(); 
     }
 
     public Image getMapSprite(){
-        //String temp = "Images/MapSpritesFixed/" + DataGrabber.mapSpritesHash.get(this.name).getName();
         String temp = "Images/MapSpritesFixed/"+this.name+".png";
         Image cap = new Image(temp);
         return cap;
@@ -62,7 +59,6 @@ public class Character {
     //Takes in a base class (or a string naming one) as an arg and checks "classTrees" for the remaining classes
     public void addClassLine(String whichClass){
         availableClasses.add(DB.baseClasses.get(whichClass));
-        //TODO: just cache these values, you don't have to keep hurting yourself :(
         if(DB.baseClasses.get(whichClass).promotedClasses.size() != 0){
             for(UnitClass promotedClass : DB.baseClasses.get(whichClass).promotedClasses){
                 availableClasses.add(promotedClass);
@@ -71,11 +67,9 @@ public class Character {
     }
 
     public Image getPortrait(){
-        //String temp = "Images/Portraits/" + DataGrabber..get(this.name).getName();
         String temp = "Images/Portraits/"+this.name+".png";
         Image cap = new Image(temp);
         return cap;
-        //return portrait;
     }
 
     public ArrayList<Skill> getPossibleSkills(){
@@ -90,6 +84,21 @@ public class Character {
         //in the displayed character. 
 
         //will need to add friendship/partner support pairings first before implementing this (to prevent more work later)
+    }
+
+    public ArrayList<Skill> getPossibleSkills(boolean test){
+        if(test == false){
+            System.out.println("Not running the test method I see?");
+            return null;
+        } else {
+            ArrayList<Skill> possibleSkills = new ArrayList<Skill>();
+            for(UnitClass thisClass : availableClasses){
+                for(Skill thisSkill : thisClass.classSkills){
+                    possibleSkills.add(thisSkill);
+                }
+            }
+            return possibleSkills;
+        }
     }
 
     public void setMapSpriteFile(File aFile){

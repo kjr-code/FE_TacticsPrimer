@@ -19,11 +19,8 @@ public class DB {
             File skillFile = new File(Constants.skillsFile);
             Scanner skillFileScanner = new Scanner(skillFile);
             while(skillFileScanner.hasNextLine()){
-                //read in the skills and such
                 String nextSkill = skillFileScanner.nextLine();
                 String[] split = nextSkill.split("&");
-                //System.out.println("DB.loadData(): trying to make a String[] based on next line: ");
-                //System.out.println("Skill "+split[0]+" array length: "+split.length);
                 Skill newSkill = new Skill(split[0], split[1]);
                 skills.put(newSkill.getName(), newSkill);
                 //TODO: the third index in split[] is the skill's "id"/file name
@@ -34,13 +31,13 @@ public class DB {
             Scanner promotedClassesFileScanner = new Scanner(promotedClassesFile);
             while(promotedClassesFileScanner.hasNextLine()){
                 String nextClass = promotedClassesFileScanner.nextLine();
+
                 String[] outerSplit = nextClass.split("@");
                 String[] nameAndDesc = outerSplit[0].split("&");
+                String[] _skills = outerSplit[2].split("&");
+
                 UnitClass newClass = new UnitClass(nameAndDesc[0], nameAndDesc[1]);
                 promotedClasses.put(nameAndDesc[0], newClass);
-
-                //String tester = outerSplit[1];
-                //System.out.println(tester);
 
                 String[] growthRates = outerSplit[1].split("&");
                 //TODO make this a method.
@@ -50,6 +47,17 @@ public class DB {
                 }
                 Growths newGrowths = new Growths(parsedRates);
                 newClass.setGrowths(newGrowths);
+
+                //for each skill in the skill list, associate the skill with this class
+                //TODO warning: magic numbers 
+                for(int i = 0; i < 2; i++){
+                    if(skills.get(_skills[i]) != null){
+                        newClass.classSkills.add(skills.get(_skills[i]));
+                    } else {
+                        System.out.println("DB: Warning -- I can't find the "+_skills[i]+"skill anywhere! :(");
+                    }
+                    //newClass.classSkills.add(skills.get(_skills[i]));
+                }
                 promotedClasses.put(nameAndDesc[0], newClass);
             }
             promotedClassesFileScanner.close();
@@ -63,7 +71,7 @@ public class DB {
                 String[] nameAndDesc = outerSplit[0].split("&");
                 BaseClass newClass = new BaseClass(nameAndDesc[0], nameAndDesc[1]);
                 baseClasses.put(nameAndDesc[0], newClass);
-                System.out.println("DEBUG: adding "+newClass.className+" to baseClasses Hash");
+                System.out.println("DB: Adding "+newClass.className+" to baseClasses Hash");
 
                 //TODO: this feels a bit dodgy
                 String[] growthRates = outerSplit[1].split("&");
@@ -79,6 +87,16 @@ public class DB {
                 for(String newBranch : promotionBranches){
                     baseClasses.get(nameAndDesc[0]).addPromotedClass(newBranch);
                 }
+
+                //TODO reorder this code to clean up this implementation
+                String[] _skills = outerSplit[3].split("&");
+                for(int i = 0; i < _skills.length; i++){
+                    if(skills.get(_skills[i]) != null){
+                        baseClasses.get(newClass.className).addSkill(skills.get(_skills[i]));
+                    } else {
+                        System.out.println("DB: Warning -- I can't find the "+_skills[i]+"skill anywhere! :(");
+                    }
+                }
             }
             baseClassesFileScanner.close();
 
@@ -90,6 +108,8 @@ public class DB {
                 String[] split = nextClass.split("@");
                 String[] nameAndDesc = split[0].split("&");
                 String[] growthRates = split[1].split("&");
+                String[] _skills = split[2].split("&");
+
                 UnitClass thisSpecialClass = new UnitClass(nameAndDesc[0], nameAndDesc[1]);
 
                 int[] parsedRates = new int[8];
@@ -98,6 +118,15 @@ public class DB {
                 }
                 Growths newGrowths = new Growths(parsedRates);
                 thisSpecialClass.setGrowths(newGrowths);
+
+                //TODO magic numbers
+                for(int i = 0; i < 4; i++){
+                    if(skills.get(_skills[i]) != null){
+                        thisSpecialClass.addSkill(skills.get(_skills[i]));
+                    } else {
+                        System.out.println("DB: Warning -- I can't find the "+_skills[i]+"skill anywhere! :(");
+                    }
+                }
                 specialClasses.put(nameAndDesc[0], thisSpecialClass);
             }
             specialClassesFileScanner.close();
